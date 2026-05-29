@@ -100,9 +100,24 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 ---
 
 
+### 💁 个人独享网络节点搭建
 
+🤷‍♂️ 3x-ui 可视化面板 (🌟手动添加节点、更加灵活)
 
-## 🔑 第四步：WordPress 忘记密码救砖方案
+* **特点：** 自带 Web 图形界面。
+* **优势：** 像设置路由器一样简单，后期管理、修改链式节点极方便。
+* **部署命令：**
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/tgl2775284503-hash/3x-ui/video-v2.9.4/install.sh)
+```
+
+❤️ 饮水思源，感谢 3X-UI 原作者 (mhsanaei) 的开源奉献！想折腾最新版的兄弟可以去原项目主页，记得顺手给大佬点个赞！
+
+* **3X-UI 官方原项目地址：**[https://github.com/mhsanaei/3x-ui](https://github.com/mhsanaei/3x-ui)
+
+---
+
+## 🔑 其他：WordPress 忘记密码救砖方案
 
 > **核心思路：** 如果后台密码死活登不上，直接通过 1Panel 强行修改底层数据库字段。
 

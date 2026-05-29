@@ -5,8 +5,8 @@ hide:
 ---
 
 # 🌍 云服务器（VPS）厂商推荐：
-* **性价比-云服务器 (Vmiss)：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)
-* **均衡款-云服务器 (Jtti)：** [点击获取您的中转服务器（2.5折优惠码：kjxv2026）](https://www.jtti.cc?k=T7KBH7)
+* **性价比-云服务器 (Vmiss)-优惠码：`10%OFF`：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)
+* **均衡款-云服务器 (Jtti)-2.5折优惠码：`kjxv2026`：** [点击获取您的中转服务器](https://www.jtti.cc?k=T7KBH7)
 * **高质量（天花板）-海外老牌主机商（Banwagong）** [点击查看详情](https://tgl2775284503-hash.github.io/blog/tools/2026-04-25-VPS-banwagong/)
 
 ---
