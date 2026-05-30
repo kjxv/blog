@@ -19,12 +19,12 @@
 
 > **📝 现状说明：** 由于真实的物理住宅 IP 资源极其稀缺且价格昂贵，市面上绝大多数住宅代理实际上是使用机房 IP 伪装的。存在即合理，大家不必过度担忧，只需筛选出伪装度高、相对纯净的节点即可。以下高性价比平台供大家参考：
 
-| 代理平台 | 核心特点与站长避坑提示 | 专属邀请码 | 跳转链接 |
+| 代理平台 | 核心特点与站长避坑提示 | 优惠码 | 跳转链接 |
 | :--- | :--- | :--- | :--- |
 | <span style="white-space: nowrap;">🍠 Webshare</span> | **价格极低**。**注意：** 有概率分配到机房 IP，需手动刷新替换筛选。目前群友反馈**日本、香港节点高质量 IP 较少，请注意避开**。 | - | [🔗 点击获取 (每月不到 6 元)](https://www.webshare.io/?referral_code=apnsjeua21if) |
-| <span style="white-space: nowrap;">☁️ Kookeey</span> | 常见的静态 / 动态 ISP 代理平台，覆盖较广。 | - | [🔗 点击跳转](https://www.kookeey.com/?aff=86916142) |
-| <span style="white-space: nowrap;">📲 985 Proxy</span> | 常规住宅代理，适合作为备选方案。 | - | [🔗 点击跳转](https://l1.985proxy.com/zh_CN/) |
+| <span style="white-space: nowrap;">📲 985 Proxy</span> | 常规住宅代理，适合作为备选方案。 | `XIAOV007` | [🔗 点击跳转](https://l1.985proxy.com/zh_CN/) |
 | <span style="white-space: nowrap;">🏠 Talor</span> | 注册时填写专属邀请码可获取相关优惠。 | `xiaov001` | [🔗 点击跳转](https://dashboard.talordata.com/reg?inviter_code=xiaov001) |
+| <span style="white-space: nowrap;">☁️ Kookeey</span> | 常见的静态 / 动态 ISP 代理平台，覆盖较广。 | - | [🔗 点击跳转](https://www.kookeey.com/?aff=86916142) |
 
 
 ## 💡 站长温馨提示（防风控必看）
