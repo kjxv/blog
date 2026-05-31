@@ -10,7 +10,7 @@ tags:
 
 # 🖥️ 2026 最新跨境独立站搭建教程：建站 + 专属网络环境，保姆级一次搞定！丨WordPress建站丨VPN搭建丨Shopify替代方案
 
-![封面图](../../assets/images/muban.png){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
+![封面图](../../assets/images/2026-05-24-wordpress.jpg){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
 **本期要点：** [这里简述视频的核心价值，吸引读者往下看]。本教程手把手带你通过验证，建议收藏！
 
@@ -37,7 +37,7 @@ tags:
 | **网络测试** | Speedtest 测速节点 | [🔗 点击前往](https://www.speedtest.net/zh-Hans) |
 | **社区福利** | Telegram 交流群 (含抽奖) | [💬 加入小V交流群](https://t.me/xiaovchat) |
 
-### ⬇️ 客户端下载指引
+### ⬇️ V2ray代理客户端下载指引
 
 | 平台 | 推荐客户端 | 项目主页 (源码/说明) | 直链下载地址 |
 | --- | --- | --- | --- |
@@ -100,21 +100,19 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 ## 🌐 第三步：WordPress 博客与独立站搭建
 
-### 1. DNS 解析配置
+### 1. 1Panel 一键部署与网站迁移顺序
 
-* **操作平台：** 登录 NameSilo 后台。
-* **记录设置：** 添加一条 `A` 记录，名称填写 `@` 或 `www`，内容填写您的服务器公网 IP 地址。
+| 任务阶段 | 步骤名称 | 具体操作说明 |
+| :--- | :--- | :--- |
+| **1. DNS 解析配置** | 操作平台 | 登录 NameSilo 后台。 |
+| | 记录设置 | 添加一条 `A` 记录，名称填写 `@` 或 `www`，内容填写您的服务器公网 IP 地址。 |
+| **2. 1Panel 一键部署与网站迁移顺序** | 1. 环境安装 | 在 1Panel 应用商店中，依次安装 **OpenResty**（Web 服务器网关）与 **MariaDB / MySQL**（数据库）。 |
+| | 2. 程序部署 | 在应用商店中搜索并一键安装 **WordPress**。 |
+| | 3. 域名与证书 | 进入 1Panel 的「网站」列表，绑定您的自定义域名，并一键申请 Let's Encrypt 免费 SSL 证书。 |
+| | 4. 基础设置 | 登录 WordPress 后台，将网站地址统一设置为您的专属域名；随后安装 Blocksy 主题插件并选择心仪的网站主题。 |
+| | 5. 数据备份 | 在 WordPress 中安装 WPvivid 备份插件，执行全站备份并将文件下载保存至本地电脑。 |
+| | 6. 新服还原 | 若涉及服务器迁移，请在新服务器上重复上述 1-3 步安装全新环境。随后进入新 WordPress 安装 WPvivid 插件，选择 **“上传 -> 备份文件 -> 还原”** 即可完成整站迁移。 |
 
-### 2. 1Panel 一键部署与网站迁移顺序
-
-1. **环境安装：** 在 1Panel 应用商店中，依次安装 **OpenResty**（Web 服务器网关）与 **MariaDB / MySQL**（数据库）。
-2. **程序部署：** 在应用商店中搜索并一键安装 **WordPress**。
-3. **域名与证书：** 进入 1Panel 的「网站」列表，绑定您的自定义域名，并一键申请 Let's Encrypt 免费 SSL 证书。
-4. **基础设置：** 登录 WordPress 后台，将网站地址统一设置为您的专属域名；随后安装 Blocksy 主题插件并选择心仪的网站主题。
-5. **数据备份：** 在 WordPress 中安装 WPvivid 备份插件，执行全站备份并将文件下载保存至本地电脑。
-6. **新服还原：** 若涉及服务器迁移，请在新服务器上重复上述 1-3 步安装全新环境。随后进入新 WordPress 安装 WPvivid 插件，选择 **“上传 -> 备份文件 -> 还原”** 即可完成整站迁移。
-
----
 
 ## 💁 第四步：个人独享网络节点搭建
 
