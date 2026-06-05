@@ -58,7 +58,8 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-
+extra_files:
+  - ads.txt
 # 3. 导航栏结构
 nav:
   - 首页: index.md
