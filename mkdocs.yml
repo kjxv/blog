@@ -32,9 +32,8 @@ theme:
 extra_css:
   - stylesheets/extra.css
 extra:
-  meta:
-    - name: google-site-verification
-      content: GZExfKWBOQLPatIXH9zE9vabPEBCfCCt6CFwOWiHIeI
+  extra_html: |
+    <meta name="google-site-verification" content="GZExfKWBOQLPatIXH9zE9vabPEBCfCCt6CFwOWiHIeI" />
 # 2. 插件设置
 plugins:
   - search:
