@@ -117,6 +117,35 @@ chmod +x /root/live/loop_images.sh
 
 ```
 
+第2版本
+```
+#!/bin/bash
+
+# 只要不终止，就一直循环
+while true; do
+    # 遍历 images 文件夹下的所有 png 文件
+    for img in /root/live/images/*.png; do
+        
+        # 防错机制：如果文件夹是空的，休息 10 秒再说
+        if [ ! -f "$img" ]; then
+            echo "未找到图片，等待上传..."
+            sleep 10
+            break
+        fi
+
+        # 【核心修复区：使用 cat 原地覆盖内容】
+        # 这样做不会改变 current.png 的底层文件编号(Inode)，FFmpeg 就能瞬间捕捉到画面变化
+        cat "$img" > /root/live/current.png
+
+        echo "[$(date '+%H:%M:%S')] 切换图片 -> $(basename "$img")"
+
+        # 停留时间：300秒 = 5分钟
+        sleep 300
+    done
+done
+```
+
+
 ### 2. 推流引擎 (`run_stream.sh`)
 
 读取 `current.jpg` 和 `bgm.mp3`，并利用 `-update 1` 参数实现画面的无缝刷新，推送到 YouTube。
@@ -180,7 +209,7 @@ ffmpeg \
 -f flv "$STREAM_URL"
 ```
 
-第4版本
+第4版本(稳定一晚上)
 ```
 #!/bin/bash
 
@@ -200,6 +229,105 @@ ffmpeg \
 -f flv "$STREAM_URL"
 ```
 
+第5版本
+```
+#!/bin/bash
+
+# 请确保这里填入了你 YouTube 后台获取的最新的 RTMP 地址和直播码
+STREAM_URL="rtmp://a.rtmp.youtube.com/live2/ar0w-zhz2-xp07-f5pc-033a"
+
+# 纯净版推流指令（完美适配 screen 窗口）
+ffmpeg \
+-re -stream_loop -1 -i /root/live/bgm.mp3 \
+-stream_loop -1 -framerate 1/2 -i /root/live/current.jpg \
+-vf "fps=10,scale=trunc(iw/2)*2:trunc(ih/2)*2" \
+-c:v libx264 -preset ultrafast -tune stillimage \
+-b:v 500k -maxrate 500k -bufsize 1000k \
+-g 20 -pix_fmt yuv420p \
+-threads 1 \
+-c:a aac -b:a 128k -ar 44100 \
+-f flv "$STREAM_URL"
+```
+
+第6版本
+```
+#!/bin/bash
+
+STREAM_URL="rtmp://a.rtmp.youtube.com/live2/ar0w-zhz2-xp07-f5pc-033a"
+
+# 终极防错版：先读图片，再读音频，并强制映射轨道
+ffmpeg \
+-re -f image2 -loop 1 -framerate 1 -i /root/live/current.png \
+-re -stream_loop -1 -i /root/live/bgm.mp3 \
+-map 0:v:0 -map 1:a:0 \
+-vf "fps=10,scale=trunc(iw/2)*2:trunc(ih/2)*2" \
+-c:v libx264 -preset ultrafast -tune stillimage \
+-b:v 500k -maxrate 500k -bufsize 1000k \
+-g 20 -pix_fmt yuv420p \
+-threads 1 \
+-c:a aac -b:a 128k -ar 44100 \
+-f flv "$STREAM_URL"
+```
+
+第7版本（720调整为1080）
+```
+#!/bin/bash
+
+STREAM_URL="rtmp://a.rtmp.youtube.com/live2/pcjq-f3ta-6vvw-hxc8-9701"
+
+# 终极防错版：先读图片，再读音频，并强制映射轨道
+ffmpeg \
+-re -f image2 -loop 1 -framerate 1 -i /root/live/current.png \
+-re -stream_loop -1 -i /root/live/bgm.mp3 \
+-map 0:v:0 -map 1:a:0 \
+-vf "fps=10,scale=1920:1080,format=yuv420p" \
+-c:v libx264 -preset ultrafast -tune stillimage \
+-b:v 3000k -maxrate 4000k -bufsize 8000k \
+-g 20 -pix_fmt yuv420p \
+-threads 1 \
+-c:a aac -b:a 128k -ar 44100 \
+-f flv "$STREAM_URL"
+```
+
+第8版本（增加实时时间）
+```
+#!/bin/bash
+
+STREAM_URL="rtmp://a.rtmp.youtube.com/live2/pcjq-f3ta-6vvw-hxc8-9701"
+
+ffmpeg \
+-re -f image2 -loop 1 -framerate 1 -i /root/live/current.png \
+-re -stream_loop -1 -i /root/live/bgm.mp3 \
+-map 0:v:0 -map 1:a:0 \
+-vf "scale=1920:1080,format=yuv420p,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{localtime}':x=w-tw-40:y=40:fontsize=48:fontcolor=white:box=1:boxcolor=black@0.5" \
+-c:v libx264 -preset ultrafast -tune stillimage \
+-b:v 3000k -maxrate 4000k -bufsize 8000k \
+-g 20 -pix_fmt yuv420p \
+-threads 1 \
+-c:a aac -b:a 128k -ar 44100 \
+-f flv "$STREAM_URL"
+```
+
+第9版本（关键帧调整）
+```
+#!/bin/bash
+
+STREAM_URL="rtmp://a.rtmp.youtube.com/live2/pcjq-f3ta-6vvw-hxc8-9701"
+
+ffmpeg \
+-re -f image2 -loop 1 -framerate 1 -i /root/live/current.png \嗯嗯。
+-re -stream_loop -1 -i /root/live/bgm.mp3 \
+-map 0:v:0 -map 1:a:0 \
+-vf "scale=1920:1080,format=yuv420p,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{localtime}':x=w-tw-40:y=40:fontsize=48:fontcolor=white:box=1:boxcolor=black@0.5" \
+-r 30 \
+-c:v libx264 -preset ultrafast -tune stillimage \
+-b:v 3000k -maxrate 4000k -bufsize 8000k \
+-g 60 -keyint_min 60 -sc_threshold 0 -pix_fmt yuv420p \
+-threads 1 \
+-c:a aac -b:a 128k -ar 44100 \
+-f flv "$STREAM_URL"
+```
+
 ---
 
 ## 🎬 第四步：双核启动！
@@ -209,10 +337,6 @@ ffmpeg \
 **启动【换图引擎】：**
 
 ```bash
-# 创建后台窗口
-/root/live/loop_images.sh &
-# 运行换图脚本
-/root/live/loop_images.sh
 # 看到打印出时间后，按 Ctrl + A，松开再按 D 隐藏到后台
 screen -S swapper bash /root/live/loop_images.sh
 ```
@@ -220,10 +344,6 @@ screen -S swapper bash /root/live/loop_images.sh
 **启动【推流引擎】：**
 
 ```bash
-# 创建后台窗口
-screen -S live_stream
-# 运行推流脚本
-/root/live/run_stream.sh
 # 看到滚动的代码后，按 Ctrl + A，松开再按 D 隐藏到后台
 screen -S stream bash /root/live/run_stream.sh
 
@@ -240,6 +360,32 @@ killall screen
 ```
 
 WinSCP下载地址：[https://winscp.net/eng/download.php](https://winscp.net/eng/download.php)
+
+查看后台运行
+```
+screen -r swapper
+```
+
+```
+screen -r stream
+```
+
+一键部署命令：
+```
+bash install.sh
+```
+
+更新推流密钥：
+```
+bash /root/live/change_key.sh
+```
+
+安装字体
+```
+apt-get update
+apt-get install fonts-dejavu-core -y
+```
+
 ---
 
 ## 💡 运营维护贴士 (热更新)
