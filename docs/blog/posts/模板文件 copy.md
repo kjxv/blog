@@ -395,3 +395,30 @@ apt-get install fonts-dejavu-core -y
 * **➕ 增加新图：** 直接用 WinSCP 把新做好的图片丢进 `/root/live/images/` 文件夹即可，下一轮循环它就会自动加入播放。
 * **➖ 删除旧图：** 直接在文件夹里删掉对应的图片即可，永远不会报错。
 * **⏱️ 修改时间：** 如果觉得 5 分钟太长，用 WinSCP 打开 `/root/live/loop_images.sh`，把最下面的 `sleep 300` 改成你想要的秒数，然后重启一下换图引擎即可。
+
+### 🚀 基础网络支撑
+
+* **🔗 主播自用机场**：[ 👉 点击访问 白月光机场 官网 ↗][白月光机场]
+* **🏆 VIRCS**：[ 👉 点击访问 Vircs 官网 ↗][VIRCS]
+* [点击跳转][账号星球]
+* [Xesim官网地址][Xesim]
+
+**👉 关打发打发都是按实 ：**
+--8<-- "includes/videos.md:bybit_card"
+
+**小火箭使用教程:**
+--8<-- "includes/videos.md:shadrockt"
+
+**V2rayn使用教程**
+--8<-- "includes/videos.md:v2rayn"
+
+测试:
+--8<-- "includes/videos.md:Telegram"
+
+
+**👉 关于跨境虚拟卡的注册与保号实操，强烈推荐先看这期视频：**
+
+如果你在视频中遇到了环境配置问题，可以继续参考下方的详细图文步骤：
+---
+--8<-- "includes/links.md"
+

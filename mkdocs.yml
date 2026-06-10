@@ -50,7 +50,8 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:      # 👈 注意这里加了冒号
+      base_path: docs
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -72,5 +73,5 @@ nav:
           - 常用工具: tools/2026-03-26-tools.md
           - Openclaw安装、使用文档: tools/2026-03-26-Openclaw-tools.md
           - Banwagong(搬瓦工VPS): tools/2026-04-25-VPS-banwagong.md
-          - 服务器(VPS)推荐: tools/2026-05-15-VPS-xuanze.md
+          
           
