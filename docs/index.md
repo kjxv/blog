@@ -51,6 +51,10 @@ hide:
       margin: 0 !important;
       padding: 0 !important;
   }
+  .md-content__inner > h1,
+  .md-typeset > h1:first-child {
+      display: none !important;
+  }
 
   /* ----------------------------------------- */
   /* 视频背景与遮罩 */
