@@ -19,8 +19,8 @@ hide:
             <img class="hero-logo-image" src="assets/site-logo-v.png" alt="V站">
         </a>
         <div class="hero-action-group">
-            <a href="http://127.0.0.1:8000/blog/" class="hero-btn btn-cyan">视频文档</a>
-            <a href="http://127.0.0.1:8000/recommend/" class="hero-btn btn-glass">站长推荐</a>
+            <a href="blog/" class="hero-btn btn-cyan">视频文档</a>
+            <a href="recommend/" class="hero-btn btn-glass">站长推荐</a>
         </div>
     </div>
 
