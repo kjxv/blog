@@ -56,7 +56,7 @@ hide:
         </div>
 
         <div class="home-list">
-            <a href="blog/2026/05/24/wordpress/">
+            <a href="blog/2026/05/27/wordpress/">
                 <strong>跨境独立站搭建教程：建站、网络环境与 Shopify 替代方案</strong>
                 <span>适合想搭建独立站的新手，用来复查建站准备和网络环境配置。</span>
             </a>
