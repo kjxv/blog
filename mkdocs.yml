@@ -68,10 +68,19 @@ nav:
   - 推荐及工具:
       - 推荐: 
           - recommend/index.md
+          - VPS 云服务器: recommend/1-vps.md
+          - 跨境虚拟卡: recommend/2-card.md
+          - 静态住宅 IP: recommend/3-ips.md
+          - 加密货币交易所: recommend/4-jiaoyisuo.md
+          - 机场推荐: recommend/5-jichang.md
+          - 海外账号平台: recommend/6-accounts.md
       - 详细文档: 
           - tools/index.md
           - 常用工具: tools/2026-03-26-tools.md
           - Openclaw安装、使用文档: tools/2026-03-26-Openclaw-tools.md
           - Banwagong(搬瓦工VPS): tools/2026-04-25-VPS-banwagong.md
+  - 关于本站: about.md
+  - 隐私政策: privacy.md
+  - 免责声明: disclaimer.md
           
           
