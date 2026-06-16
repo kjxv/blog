@@ -120,7 +120,7 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 * **一键部署命令：**
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/tgl2775284503-hash/3x-ui/video-v2.9.4/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/kjxv/3x-ui/video-v2.9.4/install.sh)
 
 ```
 

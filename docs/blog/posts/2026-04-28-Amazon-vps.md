@@ -97,7 +97,7 @@ sudo -i
 * **优势：** 资源占用极低，适合低配服务器或追求极致纯净的硬核玩家。
 * **部署命令：**
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/tgl2775284503-hash/sing-box/main/sing-box.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/main/sing-box.sh)
 ```
 
 ❤️ 饮水思源，感谢 Sing-box 原作者 (fscarmen) 的开源奉献！想折腾最新版的兄弟可以去原项目主页，记得顺手给大佬点个赞！
@@ -111,7 +111,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/tgl2775284503-hash/sing-box/m
 * **优势：** 像设置路由器一样简单，后期管理、修改链式节点极方便。
 * **部署命令：**
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/tgl2775284503-hash/3x-ui/video-v2.9.4/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/kjxv/3x-ui/video-v2.9.4/install.sh)
 ```
 
 ❤️ 饮水思源，感谢 3X-UI 原作者 (mhsanaei) 的开源奉献！想折腾最新版的兄弟可以去原项目主页，记得顺手给大佬点个赞！
