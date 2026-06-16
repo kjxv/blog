@@ -21,8 +21,8 @@
 
 | 代理平台 | 核心特点与站长避坑提示 | 优惠码 | 跳转链接 |
 | :--- | :--- | :--- | :--- |
-| <span style="white-space: nowrap;">🍠 Webshare</span> | **价格极低**。**注意：** 有概率分配到机房 IP，需手动刷新替换筛选。目前群友反馈**日本、香港节点高质量 IP 较少，请注意避开**。 | - | [🔗 点击获取 (每月不到 6 元)](https://www.webshare.io/?referral_code=apnsjeua21if) |
-| <span style="white-space: nowrap;">📲 985 Proxy</span> | 常规住宅代理，适合作为备选方案。 | `XIAOV007` | [🔗 点击跳转](https://l1.985proxy.com/zh_CN/) |
+| <span style="white-space: nowrap;">🍠 Webshare</span> | **价格极低**。**注意：** 有概率分配到机房 IP，需手动刷新替换筛选。目前群友反馈**日本、香港节点高质量 IP 较少，请注意避开**。[没有国际虚拟卡的可以查看教程][虚拟卡推荐表] | - | [🔗 点击获取 (每月不到 6 元)](https://www.webshare.io/?referral_code=apnsjeua21if) |
+| <span style="white-space: nowrap;">📲 985 Proxy</span> | 常规住宅代理，适合作为备选方案。 | `XIAOV007` | [🔗 点击跳转][985Proxy] |
 | <span style="white-space: nowrap;">🏠 Talor</span> | 注册时填写专属邀请码可获取相关优惠。 | `xiaov001` | [🔗 点击跳转](https://dashboard.talordata.com/reg?inviter_code=xiaov001) |
 | <span style="white-space: nowrap;">☁️ Kookeey</span> | 常见的静态 / 动态 ISP 代理平台，覆盖较广。 | - | [🔗 点击跳转](https://www.kookeey.com/?aff=86916142) |
 
@@ -34,3 +34,5 @@
 1. **⚡ 关于测速与网络直连：** 必须明确一个核心概念——**真实住宅网络 ≠ 数据中心网络**。机房走的是 BGP 主干网，直连速度快；而实体住宅受制于当地运营商（如 AT&T）的防火墙限制和民用宽带上限。如果你在大陆地区，为了兼顾“极致防风控”与“流畅网速”，**请务必搭配优质中转线路（如 VPS）连接使用**，否则直连速度会大打折扣。
 2. **🛡️ 合规使用与防封策略：** 顶级服务商（如 VIRCS）对 IP 的纯净度管控极严，**严禁用于机场搭建、高负载批量爬虫等违规场景**。违者通常会直接封号且不予退款，请大家务必爱惜这种极其难得的干净 IP 环境。
 3. **🔒 安全连接配置（零信任模式）：** 为配合官方的安全策略，购买后请务必在后台将你的**中转服务器 IP 填入“可信 IP 白名单”**，或者使用官方提供的端口转发服务进行连接，以确保代理线路的稳定与隐蔽。
+
+--8<-- "includes/links.md"
