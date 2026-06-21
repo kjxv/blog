@@ -28,7 +28,8 @@ tags:
 ## 💰 核心资源与工具导航
 
 ### 🌍 云服务器（VPS）推荐
-* **服务器（VPS）配置推荐-懒人表格：**[点击查看详情](https://kjxv.net/recommend/1-vps/)
+* **服务器（VPS）配置推荐-懒人表格：**[点击查看详情][VPS推荐表]
+--8<-- "includes/links.md"
 * **性价比-云服务器 (Vmiss)：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)
 * **均衡款-云服务器 (Jtti)：** [点击获取您的中转服务器（2.5折优惠码：kjxv2026）](https://www.jtti.cc?k=T7KBH7)
 * **高质量（天花板）-海外老牌主机商（Banwagong）** [点击查看详情](https://kjxv.net/tools/2026-04-25-VPS-banwagong/)

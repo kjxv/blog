@@ -47,7 +47,8 @@ tags:
 
 > **📌 准备工作：** 本期演示需要提前准备好云服务器（VPS）与专属域名。
 
-* **服务器（VPS）推荐与评测结果：** [👉 点击查看详情与评测](https://kjxv.net/recommend/1-vps/)
+* **服务器（VPS）推荐与评测结果：** [👉 点击查看详情与评测][VPS推荐表]
+--8<-- "includes/links.md"
 * **老牌廉价域名商 NameSilo【优惠码：`YH1MJ`】：** [👉 点击跳转官网选购（支持支付宝）](https://www.namesilo.com/?rid=1586892lc)
 * **免税州美国地址生成器：** [👉 点击跳转生成资料](https://addressgenerator.top/us-address-generator)
 
