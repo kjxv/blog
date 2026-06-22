@@ -8,9 +8,13 @@ hide:
 >各平台全面的配置信息,可以点击下方的官网连接查看!⬇️
 
 * **性价比-云服务器 (Vmiss)-优惠码：`10%OFF`：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)
-* **均衡款-云服务器 (Jtti)-2.5折优惠码：`kjxv2026`：** [点击获取您的中转服务器](https://www.jtti.cc?k=T7KBH7)
-* **高质量（天花板）-海外老牌主机商（Banwagong）** [点击查看详情](https://kjxv.net/tools/2026-04-25-VPS-banwagong/)
+--8<-- "includes/videos.md:vmiss"
 
+* **均衡款-云服务器 (Jtti)-2.5折优惠码：`kjxv2026`：** [点击获取您的中转服务器](https://www.jtti.cc?k=T7KBH7)
+--8<-- "includes/videos.md:VPN-JD"
+
+* **高质量（天花板）-海外老牌主机商（Banwagong）** [点击查看详情](https://kjxv.net/tools/2026-04-25-VPS-banwagong/)
+--8<-- "includes/videos.md:BWG-vps"
 ---
 
 # ⬇️ 以下是主播实测,性价比较高的配置推荐,请根据自己的预算选择!
