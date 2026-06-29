@@ -27,7 +27,7 @@
 [交易所推荐表]: /recommend/4-jiaoyisuo/
 [币安]: https://www.bsmkweb.cc/join?ref=XIAOV002 "邀请码:XIAOV002"
 [bybit]: https://partner.bybit.com/b/XIAOV001 "邀请码：XIAOV001"
-[bitget]: https://partner.hdmune.cn/bg/XIAOV001 "邀请码：XIAOV001"
+[bitget]: https://partner.zysh.xyz/bg/XIAOV001 "邀请码：XIAOV001"
 [Gate]: https://www.gateport.business/share/GATEKJXV "邀请码:GATEKJXV"
 
 
