@@ -11,14 +11,15 @@
 [虚拟卡推荐表]: /recommend/2-card/
 [bitgetwallet]: https://web3.bitget.com/share/18dp6i?inviteCode=gUDD3R "邀请码:gUDD3R"
 [bybitcard]: https://partner.bybit.com/b/XIAOV001 "邀请码:4ORD8O3"
-
+[bitmartcard]: https://www.bm-snow.com/register-referral?appConfig=noNavigateBar&platform=app&r=cyeXg7 "邀请码：cyeXg7"
 
 [================= 🏠 静态住宅 IP =================]: #
-[静态代理推荐表]: /recommend/3-ips/ 
+[静态代理推荐表]: /recommend/3-isp/ 
 [vircs]: https://www.vircs.com/welcome?vcd=9467e966
 [webshare]: https://www.webshare.io/?referral_code=apnsjeua21if
+[miyaip]: https://www.miyaip.com/?invitecode=1049297 "优惠码(8.8折）：V88D"
 [985Proxy]: https://l1.985proxy.com/?TN1AZJ "优惠码:XIAOV007"
-[Talor]: https://dashboard.talordata.com/reg?inviter_code=xiaov001 "优惠码:xiaov001"
+[talor]: https://dashboard.talordata.com/reg?inviter_code=xiaov001 "优惠码:xiaov001"
 [kookeey]: https://www.kookeey.com/?aff=86916142 
 [ipflay]: https://ipfly.net/activity/WEROV1ZQQks6TFZKOVhYQzM5NQ== "邀请码:XDNWVPBK"
 
