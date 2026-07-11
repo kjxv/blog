@@ -136,8 +136,11 @@
     }
 }
 
-/* 隐藏上面的小封面图和摘要 */
-.hide-in-post { display: none !important; }
+/* 修改后的extra.css 文件的截图 */
+/* 隐藏文章详情页正文顶部的小封面图 */
+.md-content article > .hide-in-post {
+    display: none !important;
+}
 
 /* 隐藏文章正文顶部的标签 (mili, 福利) */
 .md-tags { display: none !important; }
