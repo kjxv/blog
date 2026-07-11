@@ -135,3 +135,15 @@
         padding: 1.5rem 1.5rem;
     }
 }
+
+/* 隐藏上面的小封面图和摘要 */
+.hide-in-post { display: none !important; }
+
+/* 隐藏文章正文顶部的标签 (mili, 福利) */
+.md-tags { display: none !important; }
+
+/* 将正文的一级标题（文章大标题）居中对齐，使其看起来更大气 */
+.md-content h1 { 
+  text-align: center !important; 
+  margin-bottom: 30px; /* 顺便在标题下方多留一点点空白，让排版更有呼吸感 */
+}
