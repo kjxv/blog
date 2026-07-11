@@ -39,6 +39,7 @@ plugins:
   - tags
   - blog:
       pagination_per_page: 5
+  - glightbox
 
 markdown_extensions:
   - admonition

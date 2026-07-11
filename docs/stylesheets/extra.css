@@ -1,12 +1,137 @@
-/* 1. 直接瞄准最外层的横幅盒子，让背景图左右 100% 铺满边缘 */
+/* ========================================= */
+/* 1. 横幅与全局快捷样式 */
+/* ========================================= */
+
+/* 直接瞄准最外层的横幅盒子，让背景图左右 100% 铺满边缘 */
 .md-banner {
     background: url('https://picsum.photos/1920/200?random=1') center/cover no-repeat;
 }
 
-/* 2. 让文字居中，并加一点阴影防止背景太亮看不清字 */
+/* 让文字居中，并加一点阴影防止背景太亮看不清字 */
 .md-banner__inner {
     text-align: center;
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* 自定义双图并排快捷样式 */
+.split {
+    display: flex;
+    gap: 10px; /* 两张图中间的缝隙宽度 */
+}
+.split img {
+    width: 50%; /* 各占一半 */
+    object-fit: contain; /* 防止图片变形 */
+}
+
+/* ========================================= */
+/* 2. 页面宽度与卡片化背景重构 */
+/* ========================================= */
+
+/* 放大网页的整体网格宽度（优化为黄金阅读比例） */
+.md-grid {
+    max-width: 1350px; /* 从 1500px 收回一点，兼顾宽屏展示与文字阅读的舒适单行长度 */
+}
+
+/* 把整个网页底层背景变成高级浅灰（仅限白天模式生效，保护夜间模式） */
+[data-md-color-scheme="default"] body {
+    background-color: #f5f7fa;
+}
+
+/* 精准定位“纯正文区域”，将其做成“白色圆角卡片”（排除左侧的返回主页栏） */
+[data-md-color-scheme="default"] article.md-content__inner {
+    background-color: #ffffff;
+    padding: 3rem 4rem;      /* 加大卡片内部的四周留白，阅读体验极佳 */
+    border-radius: 16px;     /* 更圆润的边角，现代感更强 */
+    box-shadow: 0 4px 30px rgba(0,0,0,0.06); /* 非常柔和的高级阴影 */
+    margin-top: 10px;
+}
+
+/* 移动端适配：屏幕变小时，适当缩小卡片的内边距，防止手机上两边留白太多吃掉文字空间 */
+@media screen and (max-width: 76.1875em) {
+    [data-md-color-scheme="default"] article.md-content__inner {
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+/* ========================================= */
+/* 3. 字体平滑缩放与排版优化 (克隆样板站视觉) */
+/* ========================================= */
+
+/* 提升正文“底盘”，缩小与全局 UI (侧边栏/目录) 的落差 */
+.md-typeset {
+    font-size: 16px;      /* 明确设定正文基础字号 */
+    line-height: 1.75;    /* 稍微拉开正文行距，增加呼吸感 */
+    color: #374151;       /* 正文使用高级深灰，而非死黑，阅读不刺眼 */
+}
+
+/* 一级标题：去突兀化，温和引导 */
+.md-typeset h1 {
+    color: #111827 !important;
+    font-weight: 700 !important; /* 降级到 700，减少压迫感 */
+    font-size: 1.6em;            /* 继续缩小，仅作为页面起点标志 */
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.6em;
+}
+
+/* 二级标题（对应：一、前言介绍）：平滑过渡 */
+.md-typeset h2 {
+    font-size: 1.25em;           /* 只比正文大四分之一，克制且清晰 */
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+}
+
+/* 三级标题（对应：1. 搭建节点）：微调强调 */
+.md-typeset h3 {
+    font-size: 1.1em;            /* 几乎接近正文大小，仅靠加粗区分 */
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 1.4em;
+    margin-bottom: 0.4em;
+}
+
+/* 正文加粗文字优化 */
+.md-typeset strong {
+    font-weight: 600;            /* 正文里的加粗也不要太粗，600 足够 */
+    color: #111827;
+}
+
+/* 列表项优化 */
+.md-typeset ul li {
+    line-height: 1.75;
+    margin-bottom: 0.3em;
+}
+
+/* ========================================= */
+/* 页面宽度与卡片化背景重构 */
+/* ========================================= */
+
+/* 1. 放大网页的整体网格宽度（解决两边留白过多、中间太窄的问题） */
+.md-grid {
+    max-width: 1500px; /* 默认是 1220px，改为 1500px 后，中间的正文区会自动按比例大幅加宽 */
+}
+
+/* 2. 把整个网页底层背景变成高级浅灰（仅限白天模式生效，保护夜间模式） */
+[data-md-color-scheme="default"] body {
+    background-color: #f5f7fa;
+}
+
+/* 3. 精准定位“纯正文区域”，将其做成“白色圆角卡片”（排除左侧的返回主页栏） */
+[data-md-color-scheme="default"] article.md-content__inner {
+    background-color: #ffffff;
+    padding: 3rem 4rem;      /* 加大卡片内部的四周留白（上下3rem，左右4rem），配合加宽的页面，阅读体验极佳 */
+    border-radius: 16px;     /* 更圆润的边角，现代感更强 */
+    box-shadow: 0 4px 30px rgba(0,0,0,0.06); /* 非常柔和的高级阴影 */
+    margin-top: 10px;
+}
+
+/* 移动端适配：屏幕变小时，适当缩小卡片的内边距，防止手机上两边留白太多吃掉文字空间 */
+@media screen and (max-width: 76.1875em) {
+    [data-md-color-scheme="default"] article.md-content__inner {
+        padding: 1.5rem 1.5rem;
+    }
 }

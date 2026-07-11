@@ -29,16 +29,30 @@ tags:
 
 ---
 
-## 📦 一、准备工作
+## 📦 一、选购eSIM套餐
 
-3 HK官网地址：[https://www.three.com](https://www.three.com.hk/tc/home.html)
-![步骤一](images/01-1.png)
+1. 打开3 HK官网地址：[https://www.three.com](https://www.three.com.hk/tc/home.html)
+
+2. 官网首页，选择择储值卡
+![2. 官网首页，选择择储值卡](images/01-1.png)
+
+3. 选择香港及外游组合
+![3. 选择香港及外游组合](images/01-2.png)
+
+4. 选择套餐
+![4. 选择套餐](images/01-3.png)
+
+5. 选择365日套餐
+![5. 选择365日套餐](images/01-4.png)
+
+6. 选择eSIM号
+![第3步：选择套餐](images/01-5.png)
+
+7. 结账
+![第3步：选择套餐](images/01-6.png)
+
+8. 输入邮箱地址
+![第3步：选择套餐](images/01-7.png)
 
 
 
-左右并排：
-<div class="split" markdown="1">
-
-![左图](images/01-1.png)![右图](images/01-1.png)
-
-</div>
