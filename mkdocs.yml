@@ -69,12 +69,12 @@ nav:
   - 推荐及工具:
       - 推荐: 
           - recommend/index.md
-          - VPS 云服务器: recommend/1-vps.md
-          - 跨境虚拟卡: recommend/2-card.md
-          - 静态住宅 IP: recommend/3-isp.md
-          - 加密货币交易所: recommend/4-jiaoyisuo.md
-          - 机场推荐: recommend/5-jichang.md
-          - 海外账号平台: recommend/6-accounts.md
+          - VPS 云服务器: recommend/1-vps
+          - 跨境虚拟卡: recommend/2-card
+          - 静态住宅 IP: recommend/3-isp
+          - 加密货币交易所: recommend/4-jiaoyisuo
+          - 机场推荐: recommend/5-jichang
+          - 海外账号平台: recommend/6-accounts
       - 详细文档: 
           - tools/index.md
           - 常用工具: tools/2026-03-26-tools.md

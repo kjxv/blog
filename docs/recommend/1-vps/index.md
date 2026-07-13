@@ -4,8 +4,16 @@ hide:
   - toc
 ---
 
-[⬅️ 返回主目录](./index.md)
-# 🌍 云服务器（VPS）厂商推荐：
+<style>
+  /* 单独控制正文容器的最大宽度并居中显示 */
+  .md-content__inner {
+    max-width: 1200px !important; /* 调整这个数值来改变宽度，比如 800px 会更窄，1000px 会更宽 */
+    margin: 0 auto !important;   /* 确保内容在屏幕中央居中 */
+  }
+</style>
+
+[⬅️ 返回主目录](../index.md)
+# 🌍 云服务器（VPS）厂商推荐
 >各平台全面的配置信息,可以点击下方的官网连接查看!⬇️
 
 * **性价比-云服务器 (Vmiss)-优惠码：`10%OFF`：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)

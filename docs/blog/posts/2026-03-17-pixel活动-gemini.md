@@ -10,7 +10,7 @@ tags:
 
 # 🎁 Gemini教程 | Pixel活动免费领取 Google AI Pro 12个月 | 无需 Pixel 设备
 
-![Gemini活动封面](../../assets/images/2026-03-17.jpg){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
+![Gemini活动封面](../../../assets/images/2026-03-17.jpg){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" .hide-in-post}
 
 **本期要点：** 无需 Pixel 设备，即可免费领取价值 $20/月的 Google AI Pro 会员（含 1TB 空间及 Gemini Advanced）。
 

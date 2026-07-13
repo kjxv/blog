@@ -150,3 +150,41 @@
   text-align: center !important; 
   margin-bottom: 30px; /* 顺便在标题下方多留一点点空白，让排版更有呼吸感 */
 }
+
+/* 给正文里的所有 Markdown 图片统一添加样式 */
+.md-typeset img:not(.hide-in-post) {
+    display: block;
+    width: 100%;
+    max-width: 920px;
+    margin: 20px auto 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
+}
+
+/* =========================================================
+   博客目录页大屏专属排版：左侧封面图，右侧标题+摘要
+========================================================= */
+@media screen and (min-width: 768px) {
+    /* 1. 给整篇文章容器的左侧腾出 320px 的绝对空白（300px图片 + 20px间距） */
+    .md-post--excerpt {
+        position: relative;
+        padding-left: 320px;
+        min-height: 220px; /* 保证容器最小高度，避免右侧文字太少导致图片溢出重叠 */
+    }
+
+    /* 2. 把顶部的“发布日期和分类”拽回最左侧，保持顶部贯穿对齐 */
+    .md-post--excerpt > .md-post__header {
+        margin-left: -320px;
+        margin-bottom: 12px;
+    }
+
+    /* 3. 把封面图精准“钉”在左侧腾出的空白区 */
+    .md-post--excerpt .md-post__content img.hide-in-post {
+        position: absolute;
+        left: 0;
+        top: 40px; /* 控制图片距离顶部的距离，让它恰好和右侧的标题第一行平齐 */
+        width: 300px !important; /* 统一封面图宽度 */
+        margin: 0 !important;
+        float: none !important; /* 强制清除你在 md 文件里写的 align="left" 浮动效果 */
+    }
+}

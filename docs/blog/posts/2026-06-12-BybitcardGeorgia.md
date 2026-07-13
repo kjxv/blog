@@ -12,7 +12,7 @@ tags:
 
 
 
-![封面图](../../assets/images/2026-06-12-BybitcardGeorgia.png){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
+![封面图](../../../assets/images/2026-06-12-BybitcardGeorgia.png){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" .hide-in-post}
 
 **本期要点：** [这里简述视频的核心价值，吸引读者往下看]。本教程手把手带你通过验证，建议收藏！
 

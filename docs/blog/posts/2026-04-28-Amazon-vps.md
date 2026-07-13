@@ -10,7 +10,7 @@ tags:
 
 # 🌐 如何选择VPS？手机搭建节点保姆级教程：从服务器选购到AWS免费方案全公开丨VPS推荐丨免费VPS丨节点搭建丨科学上网
 
-![封面图](../../assets/images/2026-04-28-Amazon-vps.jpg){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
+![封面图](../../../assets/images/2026-04-28-Amazon-vps.jpg){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" .hide-in-post}
 
 **本期要点：** 本期视频解决你所有关于VPS服务器选择和节点搭建的问题！
 
