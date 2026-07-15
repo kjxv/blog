@@ -57,8 +57,9 @@ tags:
 ---
 ## 📺 视频相关链接
 1. Xesim官网地址（`优惠码：XIAOV001`）：[点击跳转官网][xesim] 
-2. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat) 
-3. eSIM推荐：[点击查看详情]()
+2. 香港eSIM推荐：[点击查看详情](https://youtu.be/lzGwCUPUnok)
+3. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat) 
+
 
 
 ![Xesim X2 Pro 产品图](images/Xesim-3.png){ style="display:block; width:100%; max-width: 920px; margin: 20px auto 28px; border-radius: 12px; box-shadow: 0 6px 18px rgba(15,23,42,0.10);" }
