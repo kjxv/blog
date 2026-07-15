@@ -12,7 +12,7 @@ tags:
 
 ![封面图](images/01.jpg){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
-<p class="hide-in-post"><strong>本期看点：</strong>想拥有一个香港手机号来接收海外验证码，或者需要一张自带“香港原生 IP”的流量卡用来跨境出差、科学上网？**香港 eSIM** 是目前较为方便、门槛较低的选择。</p>
+<p class="hide-in-post"><strong>本期看点：</strong>香港 eSIM 怎么选？本期深度对比 3 HK 与 Club Sim 保号成本与流量套餐！实测演示国行手机如何解锁 eSIM 功能，并附带 3 HK 激活与无信号重置避坑指南，助你轻松拿下香港手机号。</p>
 
 <div style="clear: both;" class="hide-in-post"></div>
 
@@ -41,7 +41,7 @@ tags:
 </style>
 
 <div id="top-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <iframe src="https://www.youtube.com/embed/TNpzUcM3j5o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/lzGwCUPUnok" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
