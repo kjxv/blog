@@ -63,11 +63,11 @@ tags:
 ![步骤一](images/01-1.png){ style="display:block; width:100%; max-width: 920px; margin: 20px auto 28px; border-radius: 12px; box-shadow: 0 6px 18px rgba(15,23,42,0.10);" }
 
 
+<div class="grid" markdown>
 
-左右并排：
-<div class="split" markdown="1">
+![选择网络问题](images/01-21.png)
 
-![左图](images/01-1.png)![右图](images/01-1.png)
+![选择网络问题](images/01-22.png)
 
 </div>
 

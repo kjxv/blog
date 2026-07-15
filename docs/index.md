@@ -1,7 +1,6 @@
 ---
 hide:
   - toc
-  - navigation
 ---
 
 # 小V博客
