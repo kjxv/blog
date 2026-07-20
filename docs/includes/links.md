@@ -24,6 +24,7 @@
 [ipflay]: https://ipfly.net/activity/WEROV1ZQQks6TFZKOVhYQzM5NQ== "邀请码:XDNWVPBK"
 
 
+
 [================= 📈 加密货币交易所 =================]: #
 [交易所推荐表]: /recommend/4-jiaoyisuo/
 [币安]: https://www.bsmkweb.cc/join?ref=XIAOV002 "邀请码:XIAOV002"
@@ -35,6 +36,7 @@
 [================= ✈️ 机场推荐 =================]: #
 [机场推荐表]: /recommend/5-jichang/
 [白月光机场]: https://www.sibker.com/register?invite_code=6Ab05kCw "主播自用，100+节点，解锁GPT Gemini"
+[闪电狐]: https://sdfox.cc/#/register?code=ZsCocJk3
 
 
 [================= 🛒 账号购买平台 =================]: #
@@ -50,8 +52,8 @@
 [fish]: https://fish.audio/?fpr=gl25
 [fluxcola]: https://www.fluxcola.com/register?invite_code=WFD03EEO "邀请码:WFD03EEO"
 [Ads]: https://www.adspower.net/share/8PwCP5 "邀请码:8PwCP5"
-[v2rayn电脑版]: https://github.com/2dust/v2rayN/releases/tag/7.22.5
-[v2rayng安卓版]: https://github.com/2dust/v2rayNG/releases/tag/2.0.18
+[v2rayn电脑版]: https://github.com/2dust/v2rayN/releases
+[v2rayng安卓版]: https://github.com/2dust/v2rayNG/releases
 
 
 
