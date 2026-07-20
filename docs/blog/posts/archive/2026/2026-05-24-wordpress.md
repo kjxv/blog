@@ -7,24 +7,39 @@ tags:
   - 福利
   - AI
 ---
-
+ 
 # 🖥️ 2026 最新跨境独立站搭建教程：建站 + 专属网络环境，保姆级一次搞定！丨WordPress建站丨VPN搭建丨Shopify替代方案
 
-![封面图](../../../assets/images/2026-05-24-wordpress.jpg){ width="300" align=left style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" .hide-in-post}
+![封面图](../../../assets/images/2026-05-24-wordpress.jpg){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
-**本期要点：** [这里简述视频的核心价值，吸引读者往下看]。本教程手把手带你通过验证，建议收藏！
+<p class="hide-in-post"><strong>本期看点：</strong>想要在出国旅游、出差时告别繁琐的换卡和高昂的漫游费？想要使用前沿 AI 工具或注册海外 App 却苦于没有境外号码？eSIM 绝对是完美的解决方案。</p>
 
-<div style="margin-top: 25px; text-align: center;">
-  <a href="https://youtu.be/xdEmwkawrwA" target="_blank" class="md-button md-button--neutral" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; font-size: 0.85rem; border-radius: 20px; text-decoration: none; font-weight: bold; border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease;">
-    <svg viewBox="0 0 576 512" style="height: 1.1em; fill: #FF0000; margin: 0; display: block;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.781 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
-    立即观看完整视频
-  </a>
+<div style="clear: both;" class="hide-in-post"></div>
+
+<!-- more -->
+
+<style>
+  /* 隐藏封面和摘要 */
+  .hide-in-post { display: none !important; }
+  /* 选填：给大标题上方加点间距，避免和挪下来的视频贴得太紧 */
+  h1 { margin-top: 25px !important; }
+</style>
+
+<div id="top-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <iframe src="https://www.youtube.com/embed/xdEmwkawrwA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<br clear="left">
-<!-- more -->
----
+<script>
+  (function(){
+    var video = document.getElementById('top-video');
+    var h1 = document.querySelector('h1'); // 抓取文档生成的第一个大标题
+    if(video && h1) {
+      h1.parentNode.insertBefore(video, h1); // 把视频节点插入到大标题前面
+    }
+  })();
+</script>
 
+---
 
 ## 🔗 视频相关链接与必备工具
 
