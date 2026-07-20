@@ -20,7 +20,7 @@ hide:
 --8<-- "includes/videos.md:vmiss"
 
 * **均衡款-云服务器 (Jtti)-2.5折优惠码：`kjxv2026`：** [点击获取您的中转服务器](https://www.jtti.cc?k=T7KBH7)
---8<-- "includes/videos.md:VPN-JD"
+--8<-- "includes/videos.md:VPN-JT"
 
 * **高质量（天花板）-海外老牌主机商（Banwagong）** [点击查看详情](https://kjxv.net/tools/2026-04-25-VPS-banwagong/)
 --8<-- "includes/videos.md:BWG-vps"
