@@ -12,7 +12,7 @@ tags:
 
 ![封面图](images/01.png){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
-<p class="hide-in-post"><strong>本期看点：</strong>可以直接使用的住宅代理，不需机场、不需要自建中转。</p>
+<p class="hide-in-post"><strong>本期看点：</strong>实测 MIYAIP 静态住宅代理，从购买、导入 V2ray 和指纹浏览器，到 IP 质量、带宽、4K 视频及 AI 网站测试，分享配置技巧与注意事项，适合跨境新手参考。</p>
 
 <div style="clear: both;" class="hide-in-post"></div>
 
@@ -26,7 +26,7 @@ tags:
 </style>
 
 <div id="top-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/NJC9L91SzBc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
