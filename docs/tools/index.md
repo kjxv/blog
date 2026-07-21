@@ -22,9 +22,19 @@
 
 ---
 
+## 住宅代理
+--8<-- "includes/videos.md:webshare-2026"
+--8<-- "includes/videos.md:MIYAIP-20260721"
+
+---
+
 ## 其他跨境工具：
 --8<-- "includes/videos.md:xesim-20260714"
 --8<-- "includes/videos.md:Telegram"
+--8<-- "includes/videos.md:hk-esim-20260721"
+
+
+
 
 
 

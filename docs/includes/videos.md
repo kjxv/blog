@@ -12,6 +12,37 @@
 
 ### 模板(视频名称)
 👇 写作时，请直接复制下面这行代码粘贴到文章中：
+--8<-- "includes/videos.md:webshare-2026"
+
+--8<-- [start:webshare-2026]
+<a href="https://youtu.be/OT8NW25CQSU" target="_blank" style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; font-size: 0.9em; color: #3f51b5; font-weight: bold; background: #fff; border: 1px solid #d2d2d2; border-radius: 20px; text-decoration: none; vertical-align: middle; margin-left: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#ff0000"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.86-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>Webshare 演示</a>
+--8<-- [end:webshare-2026]
+
+---
+
+### 🏠 可以直连的静态住宅代理：无需机场、无需自建中转｜跨境、TikTok与AI网络环境
+👇 写作时，请直接复制下面这行代码粘贴到文章中：
+--8<-- "includes/videos.md:MIYAIP-20260721"
+
+--8<-- [start:MIYAIP-20260721]
+<a href="https://youtu.be/NJC9L91SzBc" target="_blank" style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; font-size: 0.9em; color: #3f51b5; font-weight: bold; background: #fff; border: 1px solid #d2d2d2; border-radius: 20px; text-decoration: none; vertical-align: middle; margin-left: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#ff0000"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.86-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>MIYAIP 演示</a>
+--8<-- [end:MIYAIP-20260721]
+
+---
+
+### 🗃️ 保姆级教程：香港 eSIM 怎么选？3 HK vs Club Sim 终极对决！丨eSIM保号卡丨eSIM流量卡丨Xesim
+👇 写作时，请直接复制下面这行代码粘贴到文章中：
+--8<-- "includes/videos.md:hk-esim-20260721"
+
+--8<-- [start:hk-esim-20260721]
+<a href="https://youtu.be/lzGwCUPUnok" target="_blank" style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; font-size: 0.9em; color: #3f51b5; font-weight: bold; background: #fff; border: 1px solid #d2d2d2; border-radius: 20px; text-decoration: none; vertical-align: middle; margin-left: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#ff0000"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.86-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>香港esim如何选择？</a>
+--8<-- [end:hk-esim-20260721]
+
+
+---
+
+### 📱低成本实现eSIM自由！国行手机秒变全球通，跨境、数字游民必看丨eSIM转接卡丨海外手机卡丨Xesim
+👇 写作时，请直接复制下面这行代码粘贴到文章中：
 --8<-- "includes/videos.md:xesim-20260714"
 
 --8<-- [start:xesim-20260714]
@@ -20,7 +51,7 @@
 
 ---
 
-### 模板(视频名称)
+### 💳 大陆可用的虚拟 Visa 卡？微信支付宝消费还能返 5%丨BitMart卡丨虚拟U卡
 👇 写作时，请直接复制下面这行代码粘贴到文章中：
 --8<-- "includes/videos.md:bitmartcard"
 

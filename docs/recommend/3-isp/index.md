@@ -45,7 +45,11 @@ hide:
 | <span style="white-space: nowrap;">🏠 Talor</span> | 注册时填写专属邀请码可获取相关优惠。 | `xiaov001` | [🔗 点击跳转](https://dashboard.talordata.com/reg?inviter_code=xiaov001) |
 | <span style="white-space: nowrap;">☁️ Kookeey</span> | 常见的静态 / 动态 ISP 代理平台，覆盖较广。 | - | [🔗 点击跳转](https://www.kookeey.com/?aff=86916142) |
 
+---
 
+
+--8<-- "includes/videos.md:webshare-2026"
+--8<-- "includes/videos.md:MIYAIP-20260721"
 
 --8<-- "includes/links.md"
 
