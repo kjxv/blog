@@ -26,7 +26,7 @@ tags:
 </style>
 
 <div id="top-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <iframe src="https://www.youtube.com/embed/NJC9L91SzBc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Pms77RmHNaU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
@@ -45,9 +45,10 @@ tags:
 ## 📺 视频相关链接
 1. MIYAIP 官网地址【`优惠码：V88D`】：[点击跳转][miyaip] 
 2. 住宅代理推荐文档：[点击查看详情][静态代理推荐表]
-3. V2rayN（电脑版）下载地址：[点击跳转][v2rayn电脑版]
-4. V2rayN（手机）下载地址：[点击跳转][v2rayng安卓版]
-4. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
+3. Adspower下载地址：[点击跳转][Ads]
+4. V2rayN（电脑版）下载地址：[点击跳转][v2rayn电脑版]
+5. V2rayN（手机）下载地址：[点击跳转][v2rayng安卓版]
+6. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
 
 ---
 
@@ -159,6 +160,11 @@ tags:
 MIYAIP 这款静态住宅代理最大的优势在于“开箱即用”，将住宅 IP 和中转线路打包成了一个完整的产品。如果你正在做跨境业务，需要一个固定的海外网络环境，又不想花费大量精力研究复杂的线路配置，非常推荐先买一个月测试一下。
 
 *(注：每个地区、每条 IP 的实际表现可能存在差异，本文测试结果仅代表当前抽样的 IP 表现，请根据自身实际业务和合规用途进行选择。)*
+
+---
+
+🔐 对加密货币感兴趣的朋友,可以关注下大白课堂[(https://dabaiketang.com/)](https://dabaiketang.com/)
+大白课堂创建于 2022 年，长期专注于[加密货币](https://dabaiketang.com/what-is-cryptocurrency-beginners-guide-2026/)交易所注册教程、平台使用攻略、手续费优惠说明和返佣协助服务，是[币安](https://dabaiketang.com/binance-registration-kyc-guide/)、[Bitget](https://dabaiketang.com/bitget-referral-code-dabai50-60-percent-fee-rebate-2026/)、[Bybit](https://dabaiketang.com/bybit-kyc/)、GATE 等多家头部交易平台的长期战略合作伙伴，也是 YouTube、X 等平台华语区的头部创作者。
 
 ---
 
