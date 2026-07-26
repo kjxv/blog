@@ -10,7 +10,7 @@
 ---
 
 ## 国际虚拟卡申请：
---8<-- "includes/videos.md:bitmartcard"
+
 --8<-- "includes/videos.md:bybit_gljy"
 --8<-- "includes/videos.md:Bybitcard"
 

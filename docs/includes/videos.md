@@ -51,15 +51,6 @@
 
 ---
 
-### 💳 大陆可用的虚拟 Visa 卡？微信支付宝消费还能返 5%丨BitMart卡丨虚拟U卡
-👇 写作时，请直接复制下面这行代码粘贴到文章中：
---8<-- "includes/videos.md:bitmartcard"
-
---8<-- [start:bitmartcard]
-<a href="https://www.youtube.com/watch?v=nfzndUe3Usc&t=1s" target="_blank" style="display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; font-size: 0.9em; color: #3f51b5; font-weight: bold; background: #fff; border: 1px solid #d2d2d2; border-radius: 20px; text-decoration: none; vertical-align: middle; margin-left: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#ff0000"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.86-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>BitMart U卡</a>
---8<-- [end:bitmartcard]
-
----
 
 ### 2026丨（0基础）小白VPS节点搭建教程，有手就行！丨VPS搭建v2rayn丨VPS推荐
 👇 写作时，请直接复制下面这行代码粘贴到文章中：
