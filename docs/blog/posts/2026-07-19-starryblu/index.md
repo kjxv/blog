@@ -12,7 +12,7 @@ tags:
 
 ![封面图](images/fm.png){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
-<p class="hide-in-post"><strong>本期看点：</strong>想要在出国旅游、出差时告别繁琐的换卡和高昂的漫游费？想要使用前沿 AI 工具或注册海外 App 却苦于没有境外号码？eSIM 绝对是完美的解决方案。</p>
+<p class="hide-in-post"><strong>本期看点：</strong>本期实测从香港银行卡转出1000港币，分别通过 Starryblu 和 Wise 换汇并汇入国内银行卡，对比充值、换汇、提现手续费及最终到账金额，看看哪个平台综合损耗更低。</p>
 
 <div style="clear: both;" class="hide-in-post"></div>
 
@@ -73,9 +73,9 @@ tags:
 
 <div class="grid" markdown>
 
-![iPhone App Store 中的 Starryblu 搜索结果](images/00-1.jpg)
+![iPhone App Store 中的 Starryblu 搜索结果](images/M-00-1.jpg)
 
-![安卓应用商城中的 Starryblu 搜索结果](images/00-2.jpg)
+![安卓应用商城中的 Starryblu 搜索结果](images/M-00-2.jpg)
 
 </div>
 
@@ -105,9 +105,9 @@ MHQK00U
 
 <div class="grid" markdown>
 
-![选择居住国家或地区](images/01.jpg)
+![选择居住国家或地区](images/M-01.jpg)
 
-![设置 Starryblu ID、密码、手机号和推荐码](images/02.jpg)
+![设置 Starryblu ID、密码、手机号和推荐码](images/M-02.jpg)
 
 </div>
 
@@ -139,9 +139,9 @@ MHQK00U
 
 <div class="grid" markdown>
 
-![证件类型选择中国护照](images/03.jpg)
+![证件类型选择中国护照](images/M-03.jpg)
 
-![护照拍摄示例与合格标准](images/04.jpg)
+![护照拍摄示例与合格标准](images/M-04.jpg)
 
 </div>
 
@@ -171,9 +171,9 @@ MHQK00U
 
 <div class="grid" markdown>
 
-![按照页面提示完成人脸识别](images/05.jpg)
+![按照页面提示完成人脸识别](images/M-05.jpg)
 
-![核对并补充个人身份信息](images/06.jpg)
+![核对并补充个人身份信息](images/M-06.jpg)
 
 </div>
 
@@ -215,9 +215,9 @@ MHQK00U
 
 <div class="grid" markdown>
 
-![填写完整的居住地址](images/07.jpg)
+![填写完整的居住地址](images/M-07.jpg)
 
-![选择居民身份证并上传正反面](images/08.jpg)
+![选择居民身份证并上传正反面](images/M-08.jpg)
 
 </div>
 
@@ -229,7 +229,12 @@ MHQK00U
 
 提交之后，审核一般等待几分钟就能通过！
 
-![审核](images/09.jpg)
+
+
+
+![审核](images/M-09.jpg)
+
+
 
 ## 提交前检查清单
 

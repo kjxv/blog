@@ -152,18 +152,41 @@
 }
 
 /* =========================================
-   教程截图统一优化
-   手机截图限制大小，避免占满正文
+   图片统一显示规则
 ========================================= */
 
-.md-typeset img:not(.hide-in-post) {
+
+/* 默认图片：电脑截图 / 16:9图片 */
+.md-typeset img {
+
     display: block;
-    width: auto;
-    max-width: 350px;
+
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 20px auto 28px;
+
+    margin: 25px auto;
+
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+
+/* =========================================
+   手机截图（文件名 M- 开头）
+   例如：
+   M-01.png
+   M-register.jpg
+========================================= */
+
+.md-typeset img[src*="/M-"] {
+
+    width: auto;
+
+    max-width: 350px;
+
+    margin: 25px auto;
+
 }
 
 /* =========================================================
