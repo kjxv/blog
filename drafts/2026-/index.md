@@ -10,7 +10,7 @@ tags:
 
 # 国内手机如何免换机开通海外 eSIM？Xesim 保姆级图文教程
 
-![封面图](images/muban.png){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
+![封面图](images/fm.png){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
 <p class="hide-in-post"><strong>本期看点：</strong>想要在出国旅游、出差时告别繁琐的换卡和高昂的漫游费？想要使用前沿 AI 工具或注册海外 App 却苦于没有境外号码？eSIM 绝对是完美的解决方案。</p>
 
@@ -43,21 +43,11 @@ tags:
 ---
 
 ## 📺 视频相关链接
-1. Xesim官网地址：[点击跳转][xesim] `优惠码：XIAOV001`
-2. TG交流群：https://t.me/xiaovchat
-3. eSIM推荐：
-
+1. Starryblu官网地址【`邀请码：MHQK00U`】：[点击跳转][starryblu] 
+2. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
 
 !!! abstract "上方是视频中用到的网址。下方亦附有详细图文教程"
 
-![Xesim X2 Pro 产品图](images/Xesim-3.png){ style="display:block; width:100%; max-width: 920px; margin: 20px auto 28px; border-radius: 12px; box-shadow: 0 6px 18px rgba(15,23,42,0.10);" }
-
-
-
-<div class="tutorial-divider">
-  <p><strong>阅读提示：</strong>上方是视频里提到的相关链接和资料，适合从视频跳转来的朋友快速查找、复制。</p>
-  <p>从下面开始是完整图文教程，适合想系统了解 Xesim / eSIM 的朋友按步骤阅读。</p>
-</div>
 
 ---
 

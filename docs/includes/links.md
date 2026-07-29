@@ -54,6 +54,7 @@
 [Ads]: https://www.adspower.net/share/8PwCP5 "邀请码:8PwCP5"
 [v2rayn电脑版]: https://github.com/2dust/v2rayN/releases
 [v2rayng安卓版]: https://github.com/2dust/v2rayNG/releases
+[starryblu]: https://sg.starryblu.com/x/1q0s0NQv "邀请码：MHQK00U"
 
 
 

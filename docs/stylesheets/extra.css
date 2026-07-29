@@ -151,11 +151,16 @@
   margin-bottom: 30px; /* 顺便在标题下方多留一点点空白，让排版更有呼吸感 */
 }
 
-/* 给正文里的所有 Markdown 图片统一添加样式 */
+/* =========================================
+   教程截图统一优化
+   手机截图限制大小，避免占满正文
+========================================= */
+
 .md-typeset img:not(.hide-in-post) {
     display: block;
-    width: 100%;
-    max-width: 920px;
+    width: auto;
+    max-width: 350px;
+    height: auto;
     margin: 20px auto 28px;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
