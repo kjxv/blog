@@ -6,13 +6,24 @@ hide:
 
 # 小V博客
 
+<!-- 顶部 Hero 区域：改造为左侧文字 + 右侧首屏二维码 -->
 <section class="home-hero" aria-labelledby="home-title">
-    <div class="home-hero__inner">
-        <p class="home-kicker">Digital Tools & Practical Notes</p>
-        <h1 id="home-title">小V博客</h1>
-        <p class="home-subtitle">
-            记录跨境工具、网络环境、VPS 建站、账号配置和常用软件教程，把视频里的实操步骤整理成方便检索的文字资料。
-        </p>
+    <div class="home-hero__inner" style="display: flex; align-items: center; justify-content: space-between; gap: 32px;">
+        <!-- 左侧博客介绍 -->
+        <div style="flex: 1; max-width: 600px;">
+            <p class="home-kicker">Digital Tools & Practical Notes</p>
+            <h1 id="home-title">小V博客</h1>
+            <p class="home-subtitle">
+                记录跨境工具、网络环境、VPS 建站、账号配置和常用软件教程，把视频里的实操步骤整理成方便检索的文字资料。
+            </p>
+        </div>
+
+        <!-- 右侧首屏赞赏卡片（整体与二维码同步放大） -->
+        <div class="home-hero-qr" style="background: rgba(255, 255, 255, 0.98); padding: 22px; border-radius: 14px; box-shadow: 0 16px 40px rgba(0,0,0,0.35); text-align: center; width: 270px; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.3);">
+            <img src="assets/images/afdian-qr.jpg" alt="爱发电赞赏" style="width: 100%; max-width: 225px; border-radius: 8px; display: block; margin: 0 auto;">
+            <div style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-top: 12px;">☕ 赞赏支持 / 远程协助</div>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">微信 / 支付宝 扫码</div>
+        </div>
     </div>
 </section>
 
@@ -61,23 +72,16 @@ hide:
                 <strong>跨境独立站搭建教程：建站、网络环境与 Shopify 替代方案</strong>
                 <span>适合想搭建独立站的新手，用来复查建站准备和网络环境配置。</span>
             </a>
-            
         </div>
     </section>
 
-    <section class="home-section home-note">
-        <div>
-            <p class="home-section__eyebrow">站点说明</p>
-            <h2>内容以个人经验和公开资料整理为主</h2>
-            <p>
-                第三方工具、平台政策、价格和可用性都可能变化。涉及账号、支付、网络环境和金融平台时，请结合官方说明、平台条款和当地法律法规自行判断。
-            </p>
-        </div>
-        <div class="home-policy">
-            <a href="about/">关于本站</a>
-            <a href="privacy/">隐私政策</a>
-            <a href="disclaimer/">免责声明</a>
-        </div>
+    <!-- 简化的站点说明（去掉了重复的关于本站链接和底部冗余二维码） -->
+    <section class="home-section home-intro">
+        <p class="home-section__eyebrow">站点说明</p>
+        <h2>内容以个人经验和公开资料整理为主</h2>
+        <p>
+            第三方工具、平台政策、价格和可用性都可能变化。涉及账号、支付、网络环境和金融平台时，请结合官方说明、平台条款和当地法律法规自行判断。
+        </p>
     </section>
 </main>
 
@@ -137,7 +141,7 @@ hide:
   .home-hero__inner {
       position: relative;
       z-index: 1;
-      width: min(920px, calc(100% - 40px));
+      width: min(1080px, calc(100% - 40px));
       margin: 0 auto;
       padding: 72px 0 96px;
   }
@@ -182,8 +186,7 @@ hide:
       margin-bottom: 52px;
   }
 
-  .home-intro,
-  .home-note {
+  .home-intro {
       padding: 28px;
       border: 1px solid rgba(37, 58, 92, 0.08);
       border-radius: 8px;
@@ -286,32 +289,16 @@ hide:
       line-height: 1.7;
   }
 
-  .home-note {
-      display: grid;
-      grid-template-columns: 1fr minmax(220px, 300px);
-      gap: 28px;
-      align-items: start;
-  }
-
-  .home-policy {
-      display: grid;
-      gap: 10px;
-  }
-
-  .home-policy a {
-      padding: 12px 14px;
-      border: 1px solid rgba(37, 58, 92, 0.1);
-      border-radius: 8px;
-      color: #0f172a !important;
-      background: #f8fafc;
-      text-decoration: none !important;
-      font-weight: 700;
-  }
-
   @media screen and (max-width: 900px) {
-      .home-grid,
-      .home-note {
+      .home-grid {
           grid-template-columns: 1fr;
+      }
+      .home-hero__inner {
+          flex-direction: column !important;
+          text-align: center;
+      }
+      .home-hero-qr {
+          margin-top: 20px;
       }
   }
 
@@ -331,7 +318,6 @@ hide:
       }
 
       .home-intro,
-      .home-note,
       .home-card,
       .home-list a {
           padding: 18px;

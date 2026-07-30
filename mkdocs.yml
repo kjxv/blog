@@ -32,6 +32,14 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+
+# 社交链接与爱发电主页（👉 在这里新增以下内容）
+extra:
+  social:
+    - icon: fontawesome/solid/mug-hot  # 咖啡图标，语义为打赏/赞赏
+      link: https://afdian.com/a/kjxvtt # 👈 替换为你真实的爱发电主页网址
+      name: 赞赏支持 / 远程协助
+
 # 2. 插件设置
 plugins:
   - search:
