@@ -20,11 +20,14 @@ hide:
 
         <!-- 右侧首屏赞赏卡片（整体与二维码同步放大） -->
         <div class="home-hero-qr" style="background: rgba(255, 255, 255, 0.98); padding: 22px; border-radius: 14px; box-shadow: 0 16px 40px rgba(0,0,0,0.35); text-align: center; width: 270px; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.3);">
-            <img src="assets/images/afdian-qr.jpg" alt="爱发电赞赏" style="width: 100%; max-width: 225px; border-radius: 8px; display: block; margin: 0 auto;">
-            <div style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-top: 12px;">☕ 赞赏支持 / 远程协助</div>
-            <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">微信 / 支付宝 扫码</div>
-        </div>
+    <a href="https://afdian.com/a/kjxvtt" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+        <img src="assets/images/afdian-qr.jpg" alt="爱发电赞赏" style="width: 100%; max-width: 225px; border-radius: 8px; display: block; margin: 0 auto;">
+    </a>
+    <div style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-top: 12px;">☕ 赞赏支持 / 远程协助</div>
+    <div style="font-size: 0.82rem; margin-top: 6px;">
+        <a href="https://afdian.com/a/kjxvtt" target="_blank" rel="noopener noreferrer" style="color: #946ce6; font-weight: 600; text-decoration: underline;">👉 前往爱发电主页支持我</a>
     </div>
+</div>
 </section>
 
 <main class="home-main" aria-label="首页内容">
