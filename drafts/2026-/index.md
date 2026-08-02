@@ -26,7 +26,7 @@ tags:
 </style>
 
 <div id="top-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <iframe src="https://www.youtube.com/embed/K1D0bB-qm8A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
@@ -44,7 +44,7 @@ tags:
 
 ## 📺 视频相关链接
 1. Starryblu官网地址【`邀请码：MHQK00U`】：[点击跳转][starryblu] 
-2. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
+1. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
 
 !!! abstract "上方是视频中用到的网址。下方亦附有详细图文教程"
 

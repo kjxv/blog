@@ -47,6 +47,7 @@
 [================= ⚓ 跨境工具 =================]: #
 
 [xesim]: https://xesim.cc/?DIST=RkdPGF0%3D "优惠码：XIAOV001"
+[kitesim]: https://h5.kitesim.co/register/?invite=7COD7U "邀请码：7COD7U"
 [shopify]: https://shopify.pxf.io/kjxv
 [namesilo]: https://www.namesilo.com/?rid=a3b7f59lb "优惠码:YH1MJ"
 [fish]: https://fish.audio/?fpr=gl25
