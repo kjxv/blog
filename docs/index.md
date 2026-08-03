@@ -18,15 +18,63 @@ hide:
             </p>
         </div>
 
-        <!-- 右侧首屏赞赏卡片（整体与二维码同步放大） -->
-        <div class="home-hero-qr" style="background: rgba(255, 255, 255, 0.98); padding: 22px; border-radius: 14px; box-shadow: 0 16px 40px rgba(0,0,0,0.35); text-align: center; width: 270px; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.3);">
-    <a href="https://afdian.com/a/kjxvtt" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-        <img src="assets/images/afdian-qr.jpg" alt="爱发电赞赏" style="width: 100%; max-width: 225px; border-radius: 8px; display: block; margin: 0 auto;">
-    </a>
-    <div style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-top: 12px;">☕ 赞赏支持 / 远程协助</div>
-    <div style="font-size: 0.82rem; margin-top: 6px;">
-        <a href="https://afdian.com/a/kjxvtt" target="_blank" rel="noopener noreferrer" style="color: #946ce6; font-weight: 600; text-decoration: underline;">👉 前往爱发电主页支持我</a>
-    </div>
+        <!-- 右侧区域：上方单独二维码，下方单独操作板块 -->
+<div style="display: flex; flex-direction: column; gap: 14px; width: 320px; flex-shrink: 0;">
+
+  <!-- 单独展示爱发电二维码 -->
+  <div
+  class="home-hero-qr"
+  style="
+    background: rgba(255,255,255,0.98);
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    text-align:center;
+    width:320px;
+  "
+>
+
+  <a 
+    href="https://afdian.com/a/kjxvtt"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <img
+      src="assets/images/afdian-qr.png"
+      alt="爱发电二维码"
+      style="
+        width:100%;
+        max-width:280px;
+        display:block;
+        margin:auto;
+        border-radius:8px;
+      "
+    >
+
+  </a>
+
+
+  <a
+    href="https://afdian.com/a/kjxvtt"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      display:inline-block;
+      margin-top:12px;
+      padding:8px 18px;
+      border-radius:20px;
+      background:#946ce6;
+      color:white;
+      font-size:0.9rem;
+      font-weight:600;
+      text-decoration:none;
+    "
+  >
+    👉 前往爱发电主页
+  </a>
+
+
 </div>
 </section>
 
