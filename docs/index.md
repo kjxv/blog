@@ -18,64 +18,7 @@ hide:
             </p>
         </div>
 
-        <!-- 右侧区域：上方单独二维码，下方单独操作板块 -->
-<div style="display: flex; flex-direction: column; gap: 14px; width: 320px; flex-shrink: 0;">
 
-  <!-- 单独展示爱发电二维码 -->
-  <div
-  class="home-hero-qr"
-  style="
-    background: rgba(255,255,255,0.98);
-    padding: 18px;
-    border-radius: 14px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
-    text-align:center;
-    width:320px;
-  "
->
-
-  <a 
-    href="https://afdian.com/a/kjxvtt"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-
-    <img
-      src="assets/images/afdian-qr.png"
-      alt="爱发电二维码"
-      style="
-        width:100%;
-        max-width:280px;
-        display:block;
-        margin:auto;
-        border-radius:8px;
-      "
-    >
-
-  </a>
-
-
-  <a
-    href="https://afdian.com/a/kjxvtt"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display:inline-block;
-      margin-top:12px;
-      padding:8px 18px;
-      border-radius:20px;
-      background:#946ce6;
-      color:white;
-      font-size:0.9rem;
-      font-weight:600;
-      text-decoration:none;
-    "
-  >
-    👉 前往爱发电主页
-  </a>
-
-
-</div>
 </section>
 
 <main class="home-main" aria-label="首页内容">

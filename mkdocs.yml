@@ -72,6 +72,7 @@ markdown_extensions:
 # 3. 导航栏结构
 nav:
   - 首页: index.md
+
   - 专栏博客: 
       - blog/index.md
   - 推荐资源:
@@ -92,6 +93,7 @@ nav:
   - 关于本站: about.md
   - 隐私政策: privacy.md
   - 免责声明: disclaimer.md
-  - 友情链接: friends.md
+  - 技术支持:
+      - 远程协助: services/remote-support.md
           
           
