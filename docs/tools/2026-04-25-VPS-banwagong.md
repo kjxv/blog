@@ -30,8 +30,8 @@ hide:
 **📊 性能实测与参考：**
 
 * **实测表现**：经本地环境实测，该系列节点上传速度可稳定达到 **60Mbps+**，足以支撑高画质直播推流。
-* **商务套餐-实测文档（详细表格）**：[点击查看-实测文档（详细表格）](https://ojpxbqbnx8ot.jp.larksuite.com/wiki/Ij8gwGfNiiySOgkt32ej9UxBpue?table=tbl4R9HEfgGHdmX2&view=vew3XiECNc)
-* **商务套餐-实测文档（简洁视图）**：[点击查看-实测文档（简洁视图）](https://ojpxbqbnx8ot.jp.larksuite.com/wiki/Ij8gwGfNiiySOgkt32ej9UxBpue?table=tbl4R9HEfgGHdmX2&view=vew6fwsYem)
+* **商务套餐-实测文档（详细表格）**：[点击查看-实测文档（详细表格）](https://lcnwuorvt317.feishu.cn/base/AjvBbF3wSaylP5sjrmKcI1nqnTg?table=tblhg1wqcI5NGnHF&view=vew3XiECNc)
+* **商务套餐-实测文档（简洁视图）**：[点击查看-实测文档（简洁视图）](https://lcnwuorvt317.feishu.cn/base/AjvBbF3wSaylP5sjrmKcI1nqnTg?table=tblhg1wqcI5NGnHF&view=vew6fwsYem)
 
 
 **💼 核心业务场景：**
@@ -127,8 +127,8 @@ hide:
 
 **📊 性能实测与参考：**
 
-* **基础套餐-实测文档（详细表格）**：[点击查看-实测文档（详细表格）](https://ojpxbqbnx8ot.jp.larksuite.com/wiki/Ij8gwGfNiiySOgkt32ej9UxBpue?table=tblp1xkQt7Unw5Wk&view=vew3XiECNc)
-* **基础套餐-实测文档（简洁视图）**：[点击查看-实测文档（简洁视图）](https://ojpxbqbnx8ot.jp.larksuite.com/wiki/Ij8gwGfNiiySOgkt32ej9UxBpue?table=tblp1xkQt7Unw5Wk&view=vewPo6nF3h)
+* **基础套餐-实测文档（详细表格）**：[点击查看-实测文档（详细表格）]( https://lcnwuorvt317.feishu.cn/base/AjvBbF3wSaylP5sjrmKcI1nqnTg?table=tbl1Pzah5ZXomIDg&view=vew3XiECNc)
+* **基础套餐-实测文档（简洁视图）**：[点击查看-实测文档（简洁视图）](https://lcnwuorvt317.feishu.cn/base/AjvBbF3wSaylP5sjrmKcI1nqnTg?table=tbl1Pzah5ZXomIDg&view=vewPo6nF3h)
 
 **💼 适用业务场景：**
 
