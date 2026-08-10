@@ -34,12 +34,52 @@ hide:
 
 ---
 
-## 🥈 高性价比平替：（伪）住宅 IP / ISP 代理
+## 🥈 极致性价比：（伪）住宅 IP / ISP 代理（目前仅美国、英国适用）
+
+* **🔗 Webshare（每月不到8元）：**[👉 官网购买地址-目前仅美国、英国适用][webshare]
+
+---
+
+* **美国 IP检测截图 ⬇️**
+![IP检测](./images/IP检测美国.png)
+![IP检测](./images/IP检测英国.png)
+
+---
+
+* **手动刷IP指示图 ⬇️**
+![IP替换](./images/IP替换-1.png)
+![IP替换](./images/IP替换-2.png)
+
+---
+
+* **套餐选择指引 ⬇️**
+![webshare套餐选择](./images/webshare套餐选择-1.png)
+![webshare套餐选择](./images/webshare套餐选择-2.png)
+![webshare套餐选择](./images/webshare套餐选择-3.png)
+
+
+
+> 注意：** 有概率分配到机房 IP，需手动刷新替换筛选。目前群友反馈本平台仅**美国/英国 IP**质量还行,如需**其他地区IP**,请考虑其他平台。
+
+---
+
+!!! warning "💡 站长温馨提示："
+
+    1. 有概率分配到机房 IP，需手动刷新替换筛选。目前群友反馈本平台仅**美国/英国 IP**质量还行,如需**其他地区IP**,请考虑其他平台。
+    
+    2. 此平台支付方式仅支持**国际银行卡**，如果没有的可以查看免费申请教程 
+    
+    --8<-- "includes/videos.md:bybit_gljy"
+    --8<-- "includes/videos.md:Bybitcard"
+
+
+
+## 🥉 其他 常规：（伪）住宅 IP / ISP 代理
+
 
 
 | 代理平台 | 核心特点与站长避坑提示 | 优惠码 | 跳转链接 |
 | :--- | :--- | :--- | :--- |
-| <span style="white-space: nowrap;">🍠 Webshare</span> | **价格极低**<br>**注意：** 有概率分配到机房 IP，需手动刷新替换筛选。目前群友反馈本平台仅**美国IP**质量还行,如需**其他地区IP**,请考虑其他平台。[没有国际虚拟卡的可以查看教程][虚拟卡推荐表] | - | [🔗 点击获取 (每月不到 6 元)](https://www.webshare.io/?referral_code=apnsjeua21if) |
 | <span style="white-space: nowrap;">📦 MIYAIP</span> | **自带中转节点（可以直连）** | `V88D` | [🔗 点击跳转][miyaip] |
 | <span style="white-space: nowrap;">📲 985 Proxy</span> | 常规住宅代理，适合作为备选方案。 | `XIAOV007` | [🔗 点击跳转][985Proxy] |
 | <span style="white-space: nowrap;">🏠 Talor</span> | 注册时填写专属邀请码可获取相关优惠。 | `xiaov001` | [🔗 点击跳转](https://dashboard.talordata.com/reg?inviter_code=xiaov001) |

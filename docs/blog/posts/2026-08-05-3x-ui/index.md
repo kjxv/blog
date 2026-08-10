@@ -49,10 +49,13 @@ tags:
    - 📖 其他服务器（VPS）实测推荐：[点击查看详情][VPS推荐表]
 
 
-### 2. **静态住宅 IP：Webshare**
+### 2. **静态住宅 IP：**
    - 👉 本期视频同款静态IP（Webshare）:[点击跳转][webshare]
    - 📖 其他静态IP 实测推荐：[点击查看详情][静态代理推荐表]
 
+- 💳 国际虚拟卡申请教程：
+--8<-- "includes/videos.md:bybit_gljy"
+--8<-- "includes/videos.md:Bybitcard"
 
 ## 🛠️ 二、配套软件与工具
 
@@ -78,21 +81,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/kjxv/3x-ui/video-v3.6.0/instal
 
 ---
 
-
-
-
-
-3 HK官网地址：[https://www.three.com](https://www.three.com.hk/tc/home.html)
-![步骤一](images/01-1.png){ style="display:block; width:100%; max-width: 920px; margin: 20px auto 28px; border-radius: 12px; box-shadow: 0 6px 18px rgba(15,23,42,0.10);" }
-
-
-<div class="grid" markdown>
-
-![选择网络问题](images/01-21.png)
-
-![选择网络问题](images/01-22.png)
-
-</div>
 
 
 !!! Warning "**免责声明**"
