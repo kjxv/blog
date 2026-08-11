@@ -8,7 +8,7 @@ tags:
   - mili
 ---
 
-# 🔥 美国静态IP年付月均仅8元多！VPS搭建VPN + 链式代理完整教程丨自建节点丨科学上网丨3X-UI 3.6.0
+# 🔥 【静态住宅IP】月均不到8元！VPS搭建VPN + 链式代理完整教程丨自建节点丨科学上网丨3X-UI 3.6.0
 
 ![封面图](images/fm.png){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
