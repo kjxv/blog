@@ -26,7 +26,7 @@ tags:
 </style>
 
 <div id="top-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/9xpsFUoMJCc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
@@ -74,7 +74,7 @@ tags:
 bash <(curl -Ls https://raw.githubusercontent.com/kjxv/3x-ui/video-v3.6.0/install.sh)
 ```
 
-!!! abstract "上方是视频中用到的软件及相关网址，下方附有关键步骤的图文教程。"
+!!! abstract "上方是视频中用到的软件及相关网址"
      ❤️ 饮水思源，感谢 3X-UI 原作者 (mhsanaei) 的开源奉献！
      
      ➡️ 3X-UI 官方原项目地址：https://github.com/mhsanaei/3x-ui
