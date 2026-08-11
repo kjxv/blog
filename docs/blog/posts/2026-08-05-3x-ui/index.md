@@ -2,10 +2,10 @@
 date: 2026-08-05
 categories:
   - 工具视频教程
-slug: mili
+slug: 3x-ui
 tags:
   - 福利
-  - mili
+  - 网络
 ---
 
 # 🔥 【静态住宅IP】月均不到8元！VPS搭建VPN + 链式代理完整教程丨自建节点丨科学上网丨3X-UI 3.6.0
