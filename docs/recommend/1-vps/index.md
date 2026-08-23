@@ -16,14 +16,21 @@ hide:
 # 🌍 云服务器（VPS）厂商推荐
 >各平台全面的配置信息,可以点击下方的官网连接查看!⬇️
 
-* **性价比-云服务器 (Vmiss)-优惠码：`10%OFF`：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)
---8<-- "includes/videos.md:vmiss"
+* **高质量（天花板）-海外老牌主机商（Banwagong）** [点击查看详情](https://kjxv.net/tools/2026-04-25-VPS-banwagong/)
+--8<-- "includes/videos.md:BWG-vps"
 
 * **均衡款-云服务器 (Jtti)-2.5折优惠码：`kjxv2026`：** [点击获取您的中转服务器](https://www.jtti.cc?k=T7KBH7)
 --8<-- "includes/videos.md:VPN-JT"
 
-* **高质量（天花板）-海外老牌主机商（Banwagong）** [点击查看详情](https://kjxv.net/tools/2026-04-25-VPS-banwagong/)
---8<-- "includes/videos.md:BWG-vps"
+* **性价比-云服务器 (Vmiss)-优惠码：`10%OFF`：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)
+--8<-- "includes/videos.md:vmiss"
+
+* **性价比-云服务器 (Panstar)：** [点击获取您的中转服务器](https://panstar.ai/register?aff=DCAD1VCH)
+
+
+
+
+
 ---
 
 # ⬇️ 以下是主播实测,性价比较高的配置推荐,请根据自己的预算选择!
@@ -52,6 +59,8 @@ hide:
 
 | 厂商名称 | 配置说明 (CPU 硬盘) | 回程线路 | 机房位置 | 优缺点 | 价格 | 购买链接 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Panstar**<br> | 1核768M<br>300M带宽<br>**<span style="color: red;">512GB流量/月</span>** | 三网顶级融合<br>CN2 / 9929 / CMIN2 | 美国洛杉矶| **特点：** 线路好，配置（流量）适中，性价比首选<br>**缺点：** 仅有美国区机房，无其他地区 | **<span style="color: red;">5.99美元/月</span>** | [👉 点击查看详情](https://panstar.ai/servers?regionId=6&productId=15&planId=393&cycle=1&aff=DCAD1VCH) | 50元以内，**<span style="color: red;">美国地区性价比首选</span>** |
+| **Panstar**<br> | 1核1GB<br>1000M带宽<br>**<span style="color: red;">1024GB流量/月</span>** | 三网9929 | 德国| **特点：** 实测带宽适中、流量大，欧洲地区性价比首选<br>**缺点：** 暂无，有待测试、反馈 | **<span style="color: red;">6.99美元/月</span>** | [👉 点击查看详情](https://panstar.ai/servers?regionId=7&productId=21&planId=236&cycle=1&aff=DCAD1VCH) | 50元以内，**<span style="color: red;">欧洲地区性价比首选</span>** |
 | **搬瓦工 (BWG)**<br>基础套餐 | 2核1GB<br>1Gbps带宽<br>**<span style="color: red;">1000GB流量/月</span>** | 普通国际带宽 | 美国等6个机房<br>**<span style="color: red;">随时可迁移</span>** | **特点：** 流量足、大带宽、入门搬瓦工<br>**缺点：** 线路无QoS保障 | 49.99美元/年 | [👉 点击查看详情](https://bwh81.net/aff.php?aff=81595&pid=44) | [测试详情](https://ojpxbqbnx8ot.jp.larksuite.com/wiki/Ij8gwGfNiiySOgkt32ej9UxBpue?table=tblp1xkQt7Unw5Wk) |
 | **Vmiss** | 1核1G内存<br>200Mbps带宽<br>300GB流量/月 | CN2 GIA | 美国-洛杉矶 | **特点：** 精品线路，门槛低<br>**缺点：** 基本没啥缺点<br>**运营商：** 适合电信用户 | 6加元/月 | [👉 点击直达官网](https://app.vmiss.com/aff.php?aff=3992)<br>*(进入后点左侧 **`美国 - 洛杉矶 - CN2 GIA`**)* | 长期断货 |
 | **Vmiss** | 1核1G内存<br>200Mbps带宽<br>400GB流量/月 | CMIN2 | 美国-洛杉矶 | **特点：** 精品线路，门槛低<br>**缺点：** 基本没啥缺点<br>**运营商：** 适合移动用户 | 5加元/月 | [👉 点击直达官网](https://app.vmiss.com/aff.php?aff=3992)<br>*(进入后点左侧 **`美国 - 洛杉矶 - CMIN2`**)* | 长期断货|
