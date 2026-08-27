@@ -73,10 +73,10 @@ hide:
 
 | 代理平台 | 核心特点与站长避坑提示 | 优惠码 | 跳转链接 |
 | :--- | :--- | :--- | :--- |
-| <span style="white-space: nowrap;">📦 MIYAIP</span> | **自带中转节点（可以直连）** | `V88D` | [🔗 点击跳转][miyaip] |
-| <span style="white-space: nowrap;">📲 985 Proxy</span> | 常规住宅代理，适合作为备选方案。 | `XIAOV007` | [🔗 点击跳转][985Proxy] |
-| <span style="white-space: nowrap;">🏠 Talor</span> | 注册时填写专属邀请码可获取相关优惠。 | `xiaov001` | [🔗 点击跳转](https://dashboard.talordata.com/reg?inviter_code=xiaov001) |
-| <span style="white-space: nowrap;">☁️ Kookeey</span> | 常见的静态 / 动态 ISP 代理平台，覆盖较广。 | - | [🔗 点击跳转](https://www.kookeey.com/?aff=86916142) |
+| <span style="white-space: nowrap;">📦 MIYAIP</span> | **自带中转节点（可以直连-带宽限制20Mbps左右）** | `V88D` | [🔗 点击跳转][miyaip] |
+| <span style="white-space: nowrap;">📲 985 Proxy</span> | 常规住宅代理，适合作为备选方案（带宽需要咨询客服）。 | `XIAOV007` | [🔗 点击跳转][985Proxy] |
+| <span style="white-space: nowrap;">🏠 Talor</span> | 注册时填写专属邀请码可获取相关优惠（带宽需要咨询客服）。 | `xiaov001` | [🔗 点击跳转](https://dashboard.talordata.com/reg?inviter_code=xiaov001) |
+| <span style="white-space: nowrap;">☁️ Kookeey</span> | 常见的静态 / 动态 ISP 代理平台，覆盖较广（带宽需要咨询客服）。 | - | [🔗 点击跳转](https://www.kookeey.com/?aff=86916142) |
 
 ---
 
