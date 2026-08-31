@@ -26,7 +26,7 @@ hide:
 --8<-- "includes/videos.md:vmiss"
 
 * **性价比-云服务器 (Panstar)：** [点击获取您的中转服务器](https://panstar.ai/register?aff=DCAD1VCH)
-
+--8<-- "includes/videos.md:panstar20260831"
 
 
 
