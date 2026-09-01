@@ -38,6 +38,7 @@
 [机场推荐表]: /recommend/5-jichang/
 [白月光机场]: https://www.sibker.com/register?invite_code=6Ab05kCw "主播自用，100+节点，解锁GPT Gemini"
 [闪电狐]: https://sdfox.cc/#/register?code=ZsCocJk3
+[极速Cloud]: https://191.101.132.80/#/register?code=wQS0FQAp
 
 
 [================= 🛒 账号购买平台 =================]: #
