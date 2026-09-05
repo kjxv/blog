@@ -66,14 +66,12 @@ tags:
 1. 服务器远程连接工具（FinalShell）： [https://www.hostbuf.com/t/988.html](https://www.hostbuf.com/t/988.html)
 
 
-1. 安装Curl
+1. 安装Curl（由于系统调整，代码已更新）
 ```
-apt update && apt install -y curl
+apt-get install -y --allow-downgrades curl/bullseye
 ```
-
 
 1. **可视化路由（NextTrace）安装命令**
-
 ```
 curl nxtrace.org/nt | bash
 ```
