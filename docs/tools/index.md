@@ -7,6 +7,7 @@
 --8<-- "includes/videos.md:BWG-vps"
 --8<-- "includes/videos.md:VPN-JT"
 
+ --8<-- "includes/videos.md:panstar20260831"
 ---
 
 ## 国际虚拟卡申请：
@@ -25,6 +26,7 @@
 ## 住宅代理
 --8<-- "includes/videos.md:webshare-2026"
 --8<-- "includes/videos.md:MIYAIP-20260721"
+
 
 ---
 
