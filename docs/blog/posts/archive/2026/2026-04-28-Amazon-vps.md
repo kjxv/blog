@@ -11,7 +11,7 @@ tags:
 # 🌐 如何选择VPS？手机搭建节点保姆级教程：从服务器选购到AWS免费方案全公开丨VPS推荐丨免费VPS丨节点搭建丨科学上网
 
 
-![封面图](../../../assets/images/2026-04-28-Amazon-vps.jpg){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
+![封面图](../../../../assets/images/2026-04-28-Amazon-vps.jpg){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
 <p class="hide-in-post"><strong>本期看点：</strong>想要在出国旅游、出差时告别繁琐的换卡和高昂的漫游费？想要使用前沿 AI 工具或注册海外 App 却苦于没有境外号码？eSIM 绝对是完美的解决方案。</p>
 

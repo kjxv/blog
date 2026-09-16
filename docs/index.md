@@ -62,9 +62,9 @@ hide:
         </div>
 
         <div class="home-list">
-            <a href="blog/2026/05/27/wordpress/">
-                <strong>跨境独立站搭建教程：建站、网络环境与 Shopify 替代方案</strong>
-                <span>适合想搭建独立站的新手，用来复查建站准备和网络环境配置。</span>
+            <a href="blog/2026/09/07/clash/">
+                <strong>Clash Verge 链式代理配置静态住宅 IP 教程</strong>
+                <span>介绍静态住宅 IP 节点添加、自动分流配置和常用检测工具。</span>
             </a>
         </div>
     </section>

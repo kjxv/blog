@@ -10,7 +10,7 @@ tags:
  
 # 🎁 Gemini教程 | Pixel活动免费领取 Google AI Pro 12个月 | 无需 Pixel 设备
 
-![封面图](../../../assets/images/2026-03-17.jpg){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
+![封面图](../../../../assets/images/2026-03-17.jpg){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
 <p class="hide-in-post"><strong>本期看点：</strong>想要在出国旅游、出差时告别繁琐的换卡和高昂的漫游费？想要使用前沿 AI 工具或注册海外 App 却苦于没有境外号码？eSIM 绝对是完美的解决方案。</p>
 

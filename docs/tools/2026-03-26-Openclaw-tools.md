@@ -110,7 +110,7 @@ xcode-select --install
 
 - 注意：安装成功 但还需要重启终端 或者运行以下命令，否则国内地址无法生效
 ```zsh
-source /Users/zhyzh9008/.zprofile
+source ~/.zprofile
 ```
 
 - 检测Homebrew版本命令：
@@ -208,10 +208,10 @@ npx -y @larksuite/openclaw-lark-tools install
 
 ### 3.企业微信配置
 - 企业微信插件安装说明网址：[官方文档](https://open.work.weixin.qq.com/help2/pc/21670?person_id=1&searchData=)
-- 企业微信插件安装命令：快走快走快
+- 企业微信插件安装命令：
 ```powershell
 npx -y @wecom/wecom-openclaw-cli install
-```没空
+```
 - 企业微信扫码创建机器人，如果提示有问题，就重新输入openclaw config配置机器人ID和Secret
 
 - 配对代码命令：
@@ -219,7 +219,7 @@ npx -y @wecom/wecom-openclaw-cli install
 openclaw pairing approve wecom <配对码>
 ```
 
-企业微信插件卸载命令：1定要看我是不是
+- 企业微信插件卸载命令：
 ```
 openclaw plugins uninstall wecom-openclaw-plugin
 ```

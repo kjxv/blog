@@ -63,12 +63,10 @@
 .md-typeset {
     font-size: 16px;      /* 明确设定正文基础字号 */
     line-height: 1.75;    /* 稍微拉开正文行距，增加呼吸感 */
-    color: #374151;       /* 正文使用高级深灰，而非死黑，阅读不刺眼 */
 }
 
 /* 一级标题：去突兀化，温和引导 */
 .md-typeset h1 {
-    color: #111827 !important;
     font-weight: 700 !important; /* 降级到 700，减少压迫感 */
     font-size: 1.6em;            /* 继续缩小，仅作为页面起点标志 */
     line-height: 1.3;
@@ -76,11 +74,15 @@
     margin-bottom: 0.6em;
 }
 
+/* 浅色模式下加深文章主标题，深色模式继续使用主题自带颜色 */
+[data-md-color-scheme="default"] .md-typeset h1 {
+    color: #0f172a;
+}
+
 /* 二级标题（对应：一、前言介绍）：平滑过渡 */
 .md-typeset h2 {
     font-size: 1.25em;           /* 只比正文大四分之一，克制且清晰 */
     font-weight: 700;
-    color: #1f2937;
     margin-top: 1.6em;
     margin-bottom: 0.6em;
 }
@@ -89,7 +91,6 @@
 .md-typeset h3 {
     font-size: 1.1em;            /* 几乎接近正文大小，仅靠加粗区分 */
     font-weight: 700;
-    color: #1f2937;
     margin-top: 1.4em;
     margin-bottom: 0.4em;
 }
@@ -97,43 +98,12 @@
 /* 正文加粗文字优化 */
 .md-typeset strong {
     font-weight: 600;            /* 正文里的加粗也不要太粗，600 足够 */
-    color: #111827;
 }
 
 /* 列表项优化 */
 .md-typeset ul li {
     line-height: 1.75;
     margin-bottom: 0.3em;
-}
-
-/* ========================================= */
-/* 页面宽度与卡片化背景重构 */
-/* ========================================= */
-
-/* 1. 放大网页的整体网格宽度（解决两边留白过多、中间太窄的问题） */
-.md-grid {
-    max-width: 1500px; /* 默认是 1220px，改为 1500px 后，中间的正文区会自动按比例大幅加宽 */
-}
-
-/* 2. 把整个网页底层背景变成高级浅灰（仅限白天模式生效，保护夜间模式） */
-[data-md-color-scheme="default"] body {
-    background-color: #f5f7fa;
-}
-
-/* 3. 精准定位“纯正文区域”，将其做成“白色圆角卡片”（排除左侧的返回主页栏） */
-[data-md-color-scheme="default"] article.md-content__inner {
-    background-color: #ffffff;
-    padding: 3rem 4rem;      /* 加大卡片内部的四周留白（上下3rem，左右4rem），配合加宽的页面，阅读体验极佳 */
-    border-radius: 16px;     /* 更圆润的边角，现代感更强 */
-    box-shadow: 0 4px 30px rgba(0,0,0,0.06); /* 非常柔和的高级阴影 */
-    margin-top: 10px;
-}
-
-/* 移动端适配：屏幕变小时，适当缩小卡片的内边距，防止手机上两边留白太多吃掉文字空间 */
-@media screen and (max-width: 76.1875em) {
-    [data-md-color-scheme="default"] article.md-content__inner {
-        padding: 1.5rem 1.5rem;
-    }
 }
 
 /* 修改后的extra.css 文件的截图 */
@@ -215,4 +185,36 @@
         margin: 0 !important;
         float: none !important; /* 强制清除你在 md 文件里写的 align="left" 浮动效果 */
     }
+}
+
+/* 右侧目录下方的赞赏卡片 */
+.sidebar-support {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 8px;
+    background: var(--md-default-bg-color);
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-support__title {
+    margin-bottom: 0.45rem;
+    color: var(--md-default-fg-color);
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.sidebar-support img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.sidebar-support__hint {
+    margin-top: 0.35rem;
+    color: var(--md-default-fg-color--light);
+    font-size: 0.64rem;
 }

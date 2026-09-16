@@ -44,7 +44,7 @@ tags:
 
 ## 📺 一、视频相关链接
 
-1. 👉 本期视频同款VPS（Panstar-5.99美元/月）:[点击跳转][panstar]
+1. 👉 本期视频同款VPS（Panstar-6.99美元/月）:[点击跳转](https://panstar.ai/servers?regionId=6&productId=15&planId=393&cycle=1&aff=DCAD1VCH)
 1. 📖 其他服务器（VPS）实测推荐：[点击查看详情][VPS推荐表]
 
 >⚠️ 说明：价格、库存、配置和线路可能发生变化，请以下单时官网显示的信息为准。
