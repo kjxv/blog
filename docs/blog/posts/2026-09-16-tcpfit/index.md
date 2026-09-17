@@ -12,7 +12,7 @@ tags:
 
 ![封面图](images/fm.png){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
-<p class="hide-in-post"><strong>本期看点：</strong>普通线路变VPS通过参数调优，把现有性能尽可能发挥出来!</p>
+<p class="hide-in-post"><strong>本期看点：</strong>普通线路VPS通过参数调优，把现有性能尽可能发挥出来!</p>
 
 <div style="clear: both;" class="hide-in-post"></div>
 
@@ -26,7 +26,7 @@ tags:
 </style>
 
 <div id="top-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/kMhAXM6Qxhg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
@@ -64,6 +64,21 @@ tags:
 ## 🔗 三、服务器（连接及线路测试）
 
 1. 服务器远程连接工具（FinalShell）： [https://www.hostbuf.com/t/988.html](https://www.hostbuf.com/t/988.html)
+
+1. 安装Curl
+```
+apt update && apt install -y curl
+```
+
+- 安装Curl（以上如果报错，尝试一下命令）
+```
+apt-get install -y --allow-downgrades curl/bullseye
+```
+
+1. 3X-UI一键部署命令(版本 3.6.0)：
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/kjxv/3x-ui/video-v3.6.0/install.sh)
+```
 
 1. VPS网络参数优化命令：
 ```
