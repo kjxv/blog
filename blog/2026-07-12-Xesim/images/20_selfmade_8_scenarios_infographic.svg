@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#ffffff"/>
+  <text x="700" y="78" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="44" font-weight="700" fill="#111827">eSIM 的 8 大应用场景</text>
+  <text x="700" y="124" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="23" fill="#4b5563">海外号码、移动网络、多账号、多国家切换，一张卡集中管理</text>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" font-size="23" font-weight="700">
+    <g transform="translate(110 185)"><rect width="540" height="120" rx="18" fill="#eff6ff" stroke="#60a5fa" stroke-width="3"/><text x="38" y="52" fill="#1d4ed8">1. AI 工具注册</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">海外号码接收验证，绕开地区限制</text></g>
+    <g transform="translate(750 185)"><rect width="540" height="120" rx="18" fill="#f0fdf4" stroke="#4ade80" stroke-width="3"/><text x="38" y="52" fill="#15803d">2. 跨境账号原生 IP</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">使用海外蜂窝网络，降低风控风险</text></g>
+    <g transform="translate(110 335)"><rect width="540" height="120" rx="18" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/><text x="38" y="52" fill="#c2410c">3. 网络兜底方案</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">代理失效时，漫游流量直接联网</text></g>
+    <g transform="translate(750 335)"><rect width="540" height="120" rx="18" fill="#f5f3ff" stroke="#a78bfa" stroke-width="3"/><text x="38" y="52" fill="#6d28d9">4. 注册海外 App</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">接收 Telegram、WhatsApp 等验证码</text></g>
+    <g transform="translate(110 485)"><rect width="540" height="120" rx="18" fill="#ecfeff" stroke="#22d3ee" stroke-width="3"/><text x="38" y="52" fill="#0e7490">5. 跨国旅游 / 出差</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">落地前买好套餐，下机即可联网</text></g>
+    <g transform="translate(750 485)"><rect width="540" height="120" rx="18" fill="#fefce8" stroke="#facc15" stroke-width="3"/><text x="38" y="52" fill="#a16207">6. 多国无缝切换</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">多地区套餐随行，减少换卡成本</text></g>
+    <g transform="translate(110 635)"><rect width="540" height="120" rx="18" fill="#fdf2f8" stroke="#f472b6" stroke-width="3"/><text x="38" y="52" fill="#be185d">7. 多号码管理</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">工作、生活、社交号码集中切换</text></g>
+    <g transform="translate(750 635)"><rect width="540" height="120" rx="18" fill="#f8fafc" stroke="#94a3b8" stroke-width="3"/><text x="38" y="52" fill="#334155">8. 海外买卡避坑</text><text x="38" y="88" font-size="19" font-weight="400" fill="#374151">线上购买，价格透明，减少沟通成本</text></g>
+  </g>
+</svg>
