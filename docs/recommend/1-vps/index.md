@@ -25,7 +25,7 @@ hide:
 * **性价比-云服务器 (Vmiss)-优惠码：`10%OFF`：** [点击获取您的中转服务器](https://app.vmiss.com/aff.php?aff=3992)
 --8<-- "includes/videos.md:vmiss"
 
-* **性价比-云服务器 (Panstar)：** [点击获取您的中转服务器](https://panstar.ai/register?aff=DCAD1VCH)
+* **性价比-云服务器 (Panstar)-[官方优惠码链接](https://panstar.ai/activities?aff=DCAD1VCH)：** [点击获取您的中转服务器](https://panstar.ai/register?aff=DCAD1VCH)
 --8<-- "includes/videos.md:panstar20260831"
 
 
