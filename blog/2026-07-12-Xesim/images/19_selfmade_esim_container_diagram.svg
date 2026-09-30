@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <rect width="1400" height="820" fill="#f7fafc"/>
+  <text x="700" y="78" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="44" font-weight="700" fill="#0f172a">Xesim 卡 = eSIM 配置文件的容器</text>
+  <text x="700" y="126" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#475569">像一个专门装“数字 SIM 卡”的钱包：存储、保护、切换</text>
+  <g transform="translate(130 210)">
+    <rect x="0" y="0" width="360" height="450" rx="36" fill="#ffffff" stroke="#0ea5e9" stroke-width="5"/>
+    <rect x="44" y="70" width="272" height="300" rx="28" fill="#e0f2fe"/>
+    <rect x="92" y="120" width="176" height="220" rx="22" fill="#0284c7"/>
+    <rect x="126" y="154" width="108" height="74" rx="10" fill="#bae6fd"/>
+    <rect x="126" y="250" width="108" height="42" rx="10" fill="#bae6fd"/>
+    <text x="180" y="414" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="700" fill="#075985">Xesim 实体卡</text>
+  </g>
+  <g font-family="Microsoft YaHei, Arial, sans-serif">
+    <path d="M540 420 C610 420 630 420 700 420" stroke="#64748b" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+    <text x="620" y="390" text-anchor="middle" font-size="24" fill="#334155">写入 / 管理</text>
+  </g>
+  <g transform="translate(760 225)" font-family="Microsoft YaHei, Arial, sans-serif">
+    <rect x="0" y="0" width="510" height="92" rx="22" fill="#ffffff" stroke="#22c55e" stroke-width="4"/>
+    <text x="40" y="58" font-size="26" font-weight="700" fill="#166534">eSIM A：海外号码</text>
+    <rect x="0" y="128" width="510" height="92" rx="22" fill="#ffffff" stroke="#f97316" stroke-width="4"/>
+    <text x="40" y="186" font-size="26" font-weight="700" fill="#9a3412">eSIM B：旅行流量</text>
+    <rect x="0" y="256" width="510" height="92" rx="22" fill="#ffffff" stroke="#8b5cf6" stroke-width="4"/>
+    <text x="40" y="314" font-size="26" font-weight="700" fill="#5b21b6">eSIM C：工作账号</text>
+    <text x="255" y="420" text-anchor="middle" font-size="24" fill="#475569">启用哪张，手机就按哪张套餐入网</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
