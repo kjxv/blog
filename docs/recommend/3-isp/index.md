@@ -20,9 +20,15 @@ hide:
 
 ---
 
-## 🥇 纯血物理宽带：（真）美国静态住宅 IP
+## 🥇 双ISP静态IP VPS（独享、大带宽）
 
-✨✨✨由于之前的VIRCS调整了业务方向，现在暂未找到真正的家庭住宅IP资源！✨✨✨
+➡️  **精品线路VPS中转 + 双ISP静态VPS = 独享、大带宽静态住宅IP节点（视频教程）**
+--8<-- "includes/videos.md:Multi-EasyGost"
+
+1. 双ISP静态VPS厂商（Lisa）：[点击查看详情][lisa]
+1. 双ISP静态VPS厂商（Panstar）：[点击查看详情](https://panstar.ai/servers?regionId=6&productId=30&planId=480&cycle=12&aff=DCAD1VCH)
+1. 中转VPS推荐文档：[点击查看详情][VPS推荐表]
+>说明：中转VPS的国家（地区）尽量与双ISP静态VPS的地区保持一直（不清楚的可以，咨询博主）
 
 
 ---

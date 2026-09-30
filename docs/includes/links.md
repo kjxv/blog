@@ -6,6 +6,7 @@
 [jt]: https://www.jtti.cc?k=T7KBH7 "优惠码(2.5折)：kjxv2026"
 [搬瓦工]: https://bwh89.net/aff.php?aff=81595
 [panstar]: https://panstar.ai/register?aff=DCAD1VCH
+[lisa]: https://lisahost.com/aff.php?aff=10639
 
 
 [================= 💳 跨境虚拟银行卡 =================]: #
