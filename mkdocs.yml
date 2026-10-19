@@ -35,7 +35,11 @@ theme:
 # 额外样式        
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/wg-live.css
 
+
+extra_javascript:
+  - javascripts/wg-live.js
 
 # 社交链接与 Telegram 技术支持
 extra:

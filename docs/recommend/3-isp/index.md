@@ -36,7 +36,10 @@ hide:
 ## 🥈 极致性价比：住宅 IP / ISP 代理（目前仅美国、英国适用）
 
 * **🔗 Webshare（每月不到8元）：**[👉 官网购买地址-目前仅美国、英国适用][webshare]
+* **💳 此平台支付方式仅支持**国际银行卡，如果没有的可以查看免费申请教程 
 
+    --8<-- "includes/videos.md:bybit_gljy"
+    --8<-- "includes/videos.md:Bybitcard"
 ---
 
 * **美国 IP检测截图 ⬇️**
@@ -66,10 +69,7 @@ hide:
 
     1. 有概率分配到机房 IP，需手动刷新替换筛选。目前群友反馈本平台仅**美国/英国 IP**质量还行,如需**其他地区IP**,请考虑其他平台。
     
-    2. 此平台支付方式仅支持**国际银行卡**，如果没有的可以查看免费申请教程 
-    
-    --8<-- "includes/videos.md:bybit_gljy"
-    --8<-- "includes/videos.md:Bybitcard"
+
 
 
 

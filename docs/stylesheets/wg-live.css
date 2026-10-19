@@ -1,0 +1,32 @@
+/* Scoped to the WireGuard tutorial; uses the existing Material palette. */
+.wg-setup { margin: 1.2rem 0 1.5rem; padding: 1.1rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 12px; background: var(--md-default-bg-color); }
+.wg-setup__eyebrow { font-size: .7rem; color: var(--md-accent-fg-color); font-weight: 700; letter-spacing: .08em; margin: 0 0 .35rem !important; }
+.wg-setup h3 { margin-top: 0 !important; }
+.wg-setup__intro { font-size: .8rem; color: var(--md-default-fg-color--light); margin-bottom: 1rem; }
+.wg-setup table { display: table !important; width: 100%; border: 0 !important; box-shadow: none !important; margin: 0; }
+.wg-setup th, .wg-setup td { padding: .6rem .7rem !important; vertical-align: middle; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
+.wg-setup th { text-align: left; color: var(--md-default-fg-color--light); font-size: .68rem; }
+.wg-setup td:first-child { width: 34%; font-size: .75rem; }
+.wg-setup input { box-sizing: border-box; width: 100%; min-width: 0; padding: .5rem .65rem; border-radius: 6px; border: 1px solid var(--md-default-fg-color--lightest); font: inherit; color: var(--md-default-fg-color); background: var(--md-code-bg-color); }
+.wg-setup input:focus { outline: 2px solid var(--md-accent-fg-color); outline-offset: 1px; }
+.wg-setup input[aria-invalid="true"]:not(:placeholder-shown) { border-color: #cb5252; }
+.wg-setup details { margin-top: .6rem; box-shadow: none !important; border: 0 !important; font-size: .75rem; }
+.wg-setup summary { padding: .55rem 0 !important; background: transparent !important; color: var(--md-default-fg-color--light); }
+.wg-setup summary::before { display: none !important; }
+.wg-setup__footer { display: flex; align-items: flex-start; gap: .8rem; margin-top: .8rem; }
+.wg-setup__status { flex: 1; padding: .6rem .75rem; border-radius: 6px; background: var(--md-code-bg-color); font-size: .72rem; margin: 0 !important; }
+.wg-setup__status.is-ready { background: rgba(24, 143, 87, .10); color: var(--md-default-fg-color); }
+.wg-setup__reset { padding: .5rem .7rem; cursor: pointer; color: var(--md-default-fg-color--light); font-size: .7rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; white-space: nowrap; }
+.wg-setup__privacy, .wg-setup__local-note { font-size: .65rem; color: var(--md-default-fg-color--light); margin-bottom: 0 !important; }
+.wg-setup__local-note { padding-top: .5rem; }
+.wg-command { margin: .9rem 0 1.1rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; overflow: hidden; background: var(--md-code-bg-color); }
+.wg-command__bar { display: flex; justify-content: space-between; align-items: center; gap: .6rem; padding: .45rem .7rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); font-size: .65rem; font-weight: 600; }
+.wg-command button { background: var(--md-accent-fg-color); color: var(--md-accent-bg-color); padding: .35rem .7rem; border-radius: 5px; cursor: pointer; font-size: .65rem; white-space: nowrap; }
+.wg-command button:disabled { opacity: .45; cursor: not-allowed; }
+.wg-command pre { margin: 0 !important; overflow-x: auto; padding: .75rem !important; max-height: 340px; }
+.wg-command .md-code__nav, .wg-command .md-clipboard { display: none !important; }
+.wg-command pre code { padding: 0 !important; font-size: .67rem; line-height: 1.65; white-space: pre; color: var(--md-code-fg-color); background: transparent; }
+.wg-command__copy-status { font-size: .65rem; padding: 0 .75rem; margin: 0 !important; color: var(--md-default-fg-color--light); }
+.wg-command__copy-status:not(:empty) { padding-bottom: .5rem; }
+.wg-param { font-family: var(--md-code-font-family); color: var(--md-accent-fg-color); font-size: .9em; overflow-wrap: anywhere; }
+@media (max-width: 600px) { .wg-setup { padding: .7rem; } .wg-setup td:first-child { width: 40%; } .wg-setup__footer { flex-direction: column; } .wg-setup__status { width: 100%; box-sizing: border-box; } .wg-command pre code { font-size: .62rem; } }
