@@ -1,320 +1,517 @@
 ---
+title: 小V博客
 hide:
   - navigation
   - toc
 ---
 
-# 小V博客
+<nav class="home-nav" aria-label="首页主导航">
+  <a class="home-nav__active" href="./">首页</a>
+  <a href="blog/">专栏博客</a>
+  <a href="recommend/">推荐资源</a>
+  <a href="about/">关于本站</a>
+  <a href="privacy/">隐私政策</a>
+  <a href="disclaimer/">免责声明</a>
+  <a href="services/remote-support/">技术支持</a>
+</nav>
 
-<!-- 顶部 Hero 区域：改造为左侧文字 + 右侧首屏二维码 -->
-<section class="home-hero" aria-labelledby="home-title">
-    <div class="home-hero__inner" style="display: flex; align-items: center; justify-content: space-between; gap: 32px;">
-        <!-- 左侧博客介绍 -->
-        <div style="flex: 1; max-width: 600px;">
-            <p class="home-kicker">Digital Tools & Practical Notes</p>
-            <h1 id="home-title">小V博客</h1>
-            <p class="home-subtitle">
-                记录跨境工具、网络环境、VPS 建站、账号配置和常用软件教程，把视频里的实操步骤整理成方便检索的文字资料。
-            </p>
-        </div>
+<section class="home-hero" aria-label="小V博客首页">
+  <div class="home-hero__far" aria-hidden="true"></div>
+  <div class="home-hero__near" aria-hidden="true"></div>
+  <div class="home-hero__shade" aria-hidden="true"></div>
 
-
+  <div class="home-hero__statement">
+    <p>没有高端技术</p>
+    <h1>只有<span>使用</span>的艺术</h1>
+    <i aria-hidden="true"></i>
+  </div>
 </section>
 
-<main class="home-main" aria-label="首页内容">
-    <section class="home-section home-intro">
-        <p class="home-section__eyebrow">本站内容</p>
-        <h2>从视频教程到文字资料，方便你随时复查</h2>
-        <p>
-            这里主要整理我在实操和视频里用到的工具链接、配置步骤、资源推荐和风险提示。内容会围绕建站、VPS、网络环境、虚拟卡、住宅 IP、常用工具和数字出海资源持续更新。
-        </p>
-    </section>
-
-    <section class="home-section">
-        <div class="home-section__head">
-            <p class="home-section__eyebrow">主要栏目</p>
-            <h2>快速进入常用内容</h2>
-        </div>
-
-        <div class="home-grid">
-            <a class="home-card" href="blog/">
-                <span>视频文档</span>
-                <strong>教程文章与视频补充</strong>
-                <p>整理视频中提到的步骤、工具链接、命令和注意事项。</p>
-            </a>
-            <a class="home-card" href="recommend/">
-                <span>站长推荐</span>
-                <strong>出海工具与资源导航</strong>
-                <p>按 VPS、虚拟卡、住宅 IP、交易所、节点和账号资源分类。</p>
-            </a>
-            <a class="home-card" href="tools/">
-                <span>工具文档</span>
-                <strong>软件安装与使用说明</strong>
-                <p>沉淀常用工具、Openclaw 和服务器相关文档。</p>
-            </a>
-        </div>
-    </section>
-
-    <section class="home-section home-latest">
-        <div class="home-section__head">
-            <p class="home-section__eyebrow">最近更新</p>
-            <h2>最新教程</h2>
-        </div>
-
-        <div class="home-list">
-            <a href="blog/2026/09/07/clash/">
-                <strong>Clash Verge 链式代理配置静态住宅 IP 教程</strong>
-                <span>介绍静态住宅 IP 节点添加、自动分流配置和常用检测工具。</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- 简化的站点说明（去掉了重复的关于本站链接和底部冗余二维码） -->
-    <section class="home-section home-intro">
-        <p class="home-section__eyebrow">站点说明</p>
-        <h2>内容以个人经验和公开资料整理为主</h2>
-        <p>
-            第三方工具、平台政策、价格和可用性都可能变化。涉及账号、支付、网络环境和金融平台时，请结合官方说明、平台条款和当地法律法规自行判断。
-        </p>
-    </section>
-</main>
-
 <style>
+  /* 首页只保留单行导航与沉浸式首屏 */
+  .md-banner,
+  .md-footer,
+  .md-header__option {
+    display: none;
+  }
+
+  html,
+  body,
   .md-main {
-      background: #f7f9fc;
+    background: #173747;
   }
 
-  .md-main__inner {
-      max-width: none;
-      margin: 0;
+  /* Material 的品牌栏和标签栏在首页重叠为同一条导航 */
+  .md-header,
+  .md-tabs {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3.2rem;
+    color: rgba(255, 255, 255, 0.78);
+    background: transparent;
+    box-shadow: none;
   }
 
+  .md-header {
+    z-index: 20;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(9, 36, 49, 0.34);
+    -webkit-backdrop-filter: blur(14px) saturate(110%);
+    backdrop-filter: blur(14px) saturate(110%);
+  }
+
+  .md-header--shadow {
+    box-shadow: 0 10px 30px rgba(3, 20, 29, 0.08);
+  }
+
+  .md-header__inner {
+    width: 100%;
+    max-width: none;
+    height: 3.2rem;
+    padding: 0 3.2rem;
+  }
+
+  .md-header__button,
+  .md-header__title,
+  .md-tabs__link {
+    color: inherit;
+  }
+
+  .md-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0;
+    padding: 0.18rem;
+  }
+
+  .md-logo svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .md-header__title {
+    flex: 0 0 auto;
+    width: auto;
+    margin-left: 0.5rem;
+    font-size: 0.98rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+  }
+
+  .md-header__topic {
+    position: static;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .md-header__topic[data-md-component="header-topic"] {
+    display: none;
+  }
+
+  .md-tabs {
+    z-index: 21;
+    pointer-events: none;
+  }
+
+  .md-tabs > .md-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    height: 3.2rem;
+  }
+
+  .md-tabs__list {
+    display: flex;
+    height: 3.2rem;
+    margin: 0;
+    pointer-events: auto;
+  }
+
+  .md-tabs__item {
+    height: 3.2rem;
+    padding: 0 0.85rem;
+  }
+
+  .md-tabs__link {
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: 430;
+    letter-spacing: 0.015em;
+    opacity: 0.72;
+    transition: color 180ms ease, opacity 180ms ease;
+  }
+
+  .md-tabs__link:hover,
+  .md-tabs__item--active .md-tabs__link {
+    color: #fff;
+    opacity: 1;
+  }
+
+  /* 搜索默认收成图标，聚焦后再展开 */
+  .md-search {
+    z-index: 24;
+    flex: 0 0 2.2rem;
+    width: 2.2rem;
+    margin-left: auto;
+    transition: width 220ms ease, flex-basis 220ms ease;
+  }
+
+  .md-search__inner,
+  .md-search__form {
+    width: 2.2rem;
+    transition: width 220ms ease, background 220ms ease;
+  }
+
+  .md-search__form {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .md-search__input {
+    width: 100%;
+    padding: 0;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 160ms ease, padding 220ms ease;
+  }
+
+  .md-search__icon {
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .md-search:focus-within {
+    flex-basis: 11.5rem;
+    width: 11.5rem;
+  }
+
+  .md-search:focus-within .md-search__inner,
+  .md-search:focus-within .md-search__form {
+    width: 11.5rem;
+  }
+
+  .md-search:focus-within .md-search__form {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .md-search:focus-within .md-search__input {
+    padding: 0 1.9rem 0 2.2rem;
+    opacity: 1;
+    cursor: text;
+  }
+
+  .md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.58);
+  }
+
+  .md-main {
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  .md-main__inner,
   .md-content {
-      background: transparent;
+    width: 100%;
+    max-width: none;
+    margin: 0 !important;
   }
 
-  .md-content__inner {
-      margin: 0 !important;
-      padding: 0 !important;
-  }
-
-  .md-content__inner > h1,
-  .md-typeset > h1:first-child {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
+  [data-md-color-scheme="default"] article.md-content__inner,
+  [data-md-color-scheme="slate"] article.md-content__inner {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .home-hero {
-      position: relative;
-      min-height: 430px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      color: #ffffff;
-      background:
-          linear-gradient(90deg, rgba(5, 12, 24, 0.9), rgba(5, 12, 24, 0.62) 48%, rgba(5, 12, 24, 0.34)),
-          url("assets/home-tech-bg.png") center / cover no-repeat;
+    --far-x: 0px;
+    --far-y: 0px;
+    --near-x: 0px;
+    --near-y: 0px;
+    --light-x: 50%;
+    --light-y: 45%;
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    min-height: 100svh;
+    place-items: center;
+    overflow: hidden;
+    background: #173747;
   }
 
-  .home-hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 120px;
-      background: linear-gradient(180deg, rgba(247, 249, 252, 0), #f7f9fc);
-      pointer-events: none;
+  .home-hero__far,
+  .home-hero__near {
+    position: absolute;
+    inset: -5%;
+    background: url("assets/home-seascape-v2.webp") center / cover no-repeat;
+    pointer-events: none;
+    will-change: transform;
   }
 
-  .home-hero__inner {
-      position: relative;
-      z-index: 1;
-      width: min(1080px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 72px 0 96px;
+  .home-hero__far {
+    z-index: -4;
+    transform: translate3d(var(--far-x), var(--far-y), 0) scale(1.07);
   }
 
-  .home-kicker,
-  .home-section__eyebrow {
-      margin: 0 0 14px;
-      color: #17c3e6;
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.18em;
-      line-height: 1.2;
-      text-transform: uppercase;
+  /* 提取右侧岩石为近景层，移动幅度略大 */
+  .home-hero__near {
+    z-index: -3;
+    opacity: 0.98;
+    -webkit-mask-image:
+      radial-gradient(ellipse 62% 76% at 104% 105%, #000 0%, #000 62%, transparent 82%);
+    mask-image:
+      radial-gradient(ellipse 62% 76% at 104% 105%, #000 0%, #000 62%, transparent 82%);
+    transform: translate3d(var(--near-x), var(--near-y), 0) scale(1.085);
   }
 
-  .home-hero h1 {
-      margin: 0;
-      color: #ffffff;
-      font-size: clamp(2.4rem, 6vw, 5.4rem);
-      line-height: 1;
-      letter-spacing: 0;
-      text-shadow: 0 18px 54px rgba(0, 0, 0, 0.5);
+  .home-hero__shade {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    background:
+      radial-gradient(circle at var(--light-x) var(--light-y), rgba(65, 101, 118, 0.1), rgba(10, 38, 52, 0.42) 68%, rgba(7, 30, 43, 0.58) 100%),
+      linear-gradient(180deg, rgba(18, 53, 69, 0.38), rgba(16, 48, 62, 0.5));
+    box-shadow: inset 0 -130px 170px rgba(7, 29, 41, 0.18);
+    pointer-events: none;
   }
 
-  .home-subtitle {
-      max-width: 720px;
-      margin: 24px 0 0;
-      color: rgba(240, 250, 255, 0.9);
-      font-size: 1.02rem;
-      line-height: 1.9;
-      text-shadow: 0 12px 36px rgba(0, 0, 0, 0.42);
+  .home-hero__statement {
+    position: relative;
+    z-index: 2;
+    width: min(1050px, calc(100% - 80px));
+    margin-top: -3vh;
+    color: #fff;
+    text-align: center;
   }
 
-  .home-main {
-      width: min(1080px, calc(100% - 40px));
-      margin: -42px auto 0;
-      padding: 0 0 72px;
-      color: #172033;
+  .home-hero__statement p {
+    margin: 0 0 0.9rem;
+    color: rgba(255, 255, 255, 0.72);
+    font-family: "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    font-weight: 380;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+    text-shadow: 0 3px 22px rgba(2, 20, 30, 0.22);
   }
 
-  .home-section {
-      margin-bottom: 52px;
+  .home-hero__statement h1 {
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.98) !important;
+    font-family: "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: clamp(2.65rem, 4.4vw, 4.1rem) !important;
+    font-weight: 620 !important;
+    letter-spacing: 0.055em;
+    line-height: 1.2;
+    text-shadow: 0 9px 34px rgba(2, 20, 30, 0.28);
   }
 
-  .home-intro {
-      padding: 28px;
-      border: 1px solid rgba(37, 58, 92, 0.08);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.92);
-      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  .home-hero__statement h1 span {
+    font-weight: 720;
   }
 
-  .home-section h2 {
-      margin: 0 0 14px;
-      color: #0f172a;
-      font-size: clamp(1.35rem, 2.4vw, 2rem);
-      line-height: 1.28;
-      letter-spacing: 0;
+  .home-hero__statement i {
+    display: block;
+    width: 1.6rem;
+    height: 2px;
+    margin: 1.45rem auto 0;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.65);
   }
 
-  .home-section p {
-      max-width: 820px;
-      margin: 0;
-      color: #475569;
-      line-height: 1.9;
+  @media screen and (min-width: 50em) {
+    .md-tabs {
+      display: block !important;
+    }
+
+    .md-header__button[for="__drawer"] {
+      display: none !important;
+    }
+
+    .md-header > .md-header__inner > label[for="__search"] {
+      display: none !important;
+    }
   }
 
-  .home-section__head {
-      margin-bottom: 18px;
+  @media screen and (max-width: 49.9375em) {
+    .md-tabs {
+      display: none;
+    }
+
+    .md-header__inner {
+      padding: 0 0.7rem;
+    }
+
+    .md-header__title {
+      font-size: 0.88rem;
+    }
+
+    .md-search {
+      display: none;
+    }
+
+    .home-hero__statement {
+      width: min(100% - 32px, 680px);
+    }
   }
 
-  .home-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
+  @media screen and (max-width: 760px) {
+    .home-hero__far,
+    .home-hero__near {
+      background-position: 61% center;
+    }
+
+    .home-hero__statement {
+      margin-top: -1vh;
+    }
+
+    .home-hero__statement p {
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.11em;
+    }
+
+    .home-hero__statement h1 {
+      font-size: clamp(2.15rem, 10vw, 3.2rem) !important;
+      letter-spacing: 0.025em;
+    }
   }
 
-  .home-card {
-      min-height: 176px;
-      padding: 22px;
-      border: 1px solid rgba(37, 58, 92, 0.1);
-      border-radius: 8px;
-      color: inherit !important;
-      background: #ffffff;
-      text-decoration: none !important;
-      box-shadow: 0 14px 38px rgba(15, 23, 42, 0.06);
-      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  @media (prefers-reduced-motion: reduce) {
+    .home-hero__far,
+    .home-hero__near {
+      transform: none;
+    }
   }
 
-  .home-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(23, 195, 230, 0.55);
-      box-shadow: 0 20px 46px rgba(15, 23, 42, 0.1);
+  /* 首页使用独立导航，避免依赖主题标签栏的宽度断点 */
+  .md-tabs {
+    display: none !important;
   }
 
-  .home-card span {
-      display: block;
-      margin-bottom: 14px;
-      color: #0891b2;
-      font-size: 0.78rem;
-      font-weight: 800;
+  .home-nav {
+    display: none;
   }
 
-  .home-card strong {
-      display: block;
-      color: #0f172a;
-      font-size: 1.05rem;
-      line-height: 1.45;
+  .md-header__inner > .home-nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+    height: 3.2rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
   }
 
-  .home-card p {
-      margin-top: 12px;
-      color: #64748b;
-      font-size: 0.86rem;
-      line-height: 1.75;
+  .home-nav a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    font-weight: 430;
+    letter-spacing: 0.015em;
+    transition: color 180ms ease, opacity 180ms ease;
   }
 
-  .home-list {
-      display: grid;
-      gap: 10px;
+  .home-nav a:hover,
+  .home-nav__active {
+    color: #fff !important;
   }
 
-  .home-list a {
-      display: grid;
-      gap: 6px;
-      padding: 18px 20px;
-      border: 1px solid rgba(37, 58, 92, 0.08);
-      border-left: 3px solid #17c3e6;
-      border-radius: 8px;
-      color: inherit !important;
-      background: #ffffff;
-      text-decoration: none !important;
-      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.045);
+  .md-header > .md-header__inner > label[for="__search"] {
+    display: inline-flex !important;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.86);
   }
 
-  .home-list strong {
-      color: #0f172a;
-      font-size: 0.98rem;
-      line-height: 1.55;
+  .md-search {
+    display: none;
   }
 
-  .home-list span {
-      color: #64748b;
-      font-size: 0.84rem;
-      line-height: 1.7;
+  [data-md-toggle="search"]:checked ~ .md-header .md-search {
+    display: block;
   }
 
-  @media screen and (max-width: 900px) {
-      .home-grid {
-          grid-template-columns: 1fr;
-      }
-      .home-hero__inner {
-          flex-direction: column !important;
-          text-align: center;
-      }
-      .home-hero-qr {
-          margin-top: 20px;
-      }
+  @media screen and (min-width: 50em) {
+    .md-header__button[for="__drawer"] {
+      display: none !important;
+    }
   }
 
-  @media screen and (max-width: 600px) {
-      .home-hero {
-          min-height: 360px;
-      }
-
-      .home-hero__inner {
-          padding: 56px 0 82px;
-      }
-
-      .home-main {
-          width: min(100% - 28px, 1080px);
-          margin-top: -34px;
-          padding-bottom: 52px;
-      }
-
-      .home-intro,
-      .home-card,
-      .home-list a {
-          padding: 18px;
-      }
+  @media screen and (max-width: 49.9375em) {
+    .md-header__inner > .home-nav {
+      display: none;
+    }
   }
 </style>
+
+<script>
+  (() => {
+    const hero = document.querySelector(".home-hero");
+    const homeNav = document.querySelector(".home-nav");
+    const headerInner = document.querySelector(".md-header__inner");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (homeNav && headerInner) headerInner.appendChild(homeNav);
+
+    if (!hero || reduceMotion.matches) return;
+
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let frame = 0;
+
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+    const paint = () => {
+      currentX += (targetX - currentX) * 0.08;
+      currentY += (targetY - currentY) * 0.08;
+
+      hero.style.setProperty("--far-x", `${(-currentX * 4).toFixed(2)}px`);
+      hero.style.setProperty("--far-y", `${(-currentY * 3).toFixed(2)}px`);
+      hero.style.setProperty("--near-x", `${(currentX * 12).toFixed(2)}px`);
+      hero.style.setProperty("--near-y", `${(currentY * 8).toFixed(2)}px`);
+      hero.style.setProperty("--light-x", `${(50 + currentX * 6).toFixed(2)}%`);
+      hero.style.setProperty("--light-y", `${(45 + currentY * 5).toFixed(2)}%`);
+
+      if (Math.abs(targetX - currentX) > 0.001 || Math.abs(targetY - currentY) > 0.001) {
+        frame = requestAnimationFrame(paint);
+      } else {
+        frame = 0;
+      }
+    };
+
+    const moveTo = (x, y) => {
+      targetX = clamp(x, -1, 1);
+      targetY = clamp(y, -1, 1);
+      if (!frame) frame = requestAnimationFrame(paint);
+    };
+
+    hero.addEventListener("pointermove", (event) => {
+      const rect = hero.getBoundingClientRect();
+      moveTo(
+        ((event.clientX - rect.left) / rect.width - 0.5) * 2,
+        ((event.clientY - rect.top) / rect.height - 0.5) * 2
+      );
+    }, { passive: true });
+
+    hero.addEventListener("pointerleave", () => moveTo(0, 0), { passive: true });
+
+    window.addEventListener("deviceorientation", (event) => {
+      if (event.gamma == null || event.beta == null) return;
+      moveTo(event.gamma / 22, (event.beta - 45) / 28);
+    }, { passive: true });
+  })();
+</script>
