@@ -1,3 +1,11 @@
+---
+title: 推荐资源
+description: 汇总 VPS、虚拟卡、静态住宅 IP、交易所、机场和海外账号等常用资源。
+hero_title: 推荐资源
+hero_eyebrow: Resources · Services · Directory
+hero_subtitle: VPS、网络环境与数字出海资源导航
+---
+
 # 🌐 全球数字资产与出海工具推荐导航
 
 欢迎来到出海工具与数字资产必备资源库。为了方便查找，我们将资源划分为不同类别的核心板块。请点击下方表格中的**“查看详情”**，进入对应的详细推荐列表。

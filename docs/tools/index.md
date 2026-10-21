@@ -1,3 +1,12 @@
+---
+title: 工具专区
+description: 汇总网络搭建、虚拟卡、代理软件和其他跨境工具教程。
+hero_title: 工具专区
+hero_eyebrow: Tools · Setup · Tutorials
+hero_subtitle: 常用软件、网络工具与配置文档合集
+hero_hide_content_title: true
+---
+
 # 🌟 工具专区
 
 

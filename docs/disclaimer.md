@@ -1,3 +1,12 @@
+---
+title: 免责声明
+description: 小V博客的内容声明、服务条款与第三方服务风险说明。
+hero_title: 免责声明
+hero_eyebrow: Terms · Notice · Responsibility
+hero_subtitle: 阅读本站内容和使用相关工具前的重要说明
+hero_hide_content_title: true
+---
+
 # 免责声明与服务条款
 
 使用小V博客及其个人数据工具“V 数据同步助手”，即表示用户理解并同意本页面所述条款。

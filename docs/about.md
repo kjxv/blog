@@ -1,3 +1,12 @@
+---
+title: 关于本站
+description: 了解小V博客的内容方向、整理方式和写作原则。
+hero_title: 关于本站
+hero_eyebrow: About · Purpose · Principles
+hero_subtitle: 记录实操经验，整理可复查的公开资料
+hero_hide_content_title: true
+---
+
 # 关于本站
 
 小V博客是一个个人内容站，主要整理跨境工具、网络环境搭建、VPS 建站、数字账号配置和常用软件教程等资料。

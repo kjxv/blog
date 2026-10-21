@@ -41,6 +41,17 @@ hide:
     background: #173747;
   }
 
+  /* 首页固定为一个完整视口，不再产生底部空白和无意义滚动 */
+  html:has(.home-hero),
+  body:has(.home-hero) {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body:has(.home-hero) .md-main__inner {
+    padding: 0;
+  }
+
   /* Material 的品牌栏和标签栏在首页重叠为同一条导航 */
   .md-header,
   .md-tabs {
