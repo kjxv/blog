@@ -43,21 +43,21 @@ hide:
 ---
 
 * **美国 IP检测截图 ⬇️**
-![IP检测](./images/IP检测美国.png)
-![IP检测](./images/IP检测英国.png)
+<a class="glightbox" href="./images/IP检测美国.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/IP检测美国.png" alt="美国 IP 检测结果" loading="lazy"></a>
+<a class="glightbox" href="./images/IP检测英国.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/IP检测英国.png" alt="英国 IP 检测结果" loading="lazy"></a>
 
 ---
 
 * **手动刷IP指示图 ⬇️**
-![IP替换](./images/IP替换-1.png)
-![IP替换](./images/IP替换-2.png)
+<a class="glightbox" href="./images/IP替换-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/IP替换-1.png" alt="手动刷新 IP 操作示意图一" loading="lazy"></a>
+<a class="glightbox" href="./images/IP替换-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/IP替换-2.png" alt="手动刷新 IP 操作示意图二" loading="lazy"></a>
 
 ---
 
 * **套餐选择指引 ⬇️**
-![webshare套餐选择](./images/webshare套餐选择-1.png)
-![webshare套餐选择](./images/webshare套餐选择-2.png)
-![webshare套餐选择](./images/webshare套餐选择-3.png)
+<a class="glightbox" href="./images/webshare套餐选择-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/webshare套餐选择-1.png" alt="Webshare 套餐选择步骤一" loading="lazy"></a>
+<a class="glightbox" href="./images/webshare套餐选择-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/webshare套餐选择-2.png" alt="Webshare 套餐选择步骤二" loading="lazy"></a>
+<a class="glightbox" href="./images/webshare套餐选择-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/webshare套餐选择-3.png" alt="Webshare 套餐选择步骤三" loading="lazy"></a>
 
 
 
