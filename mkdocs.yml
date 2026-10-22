@@ -47,7 +47,7 @@ extra:
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/kejixiaov
-      name: Telegram 远程技术支持
+      name: Telegram 咨询与联系
 
 # 2. 插件设置
 plugins:
