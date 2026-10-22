@@ -68,9 +68,9 @@ hide:
   .md-header {
     z-index: 20;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(9, 36, 49, 0.34);
-    -webkit-backdrop-filter: blur(14px) saturate(110%);
-    backdrop-filter: blur(14px) saturate(110%);
+    background: rgba(15, 43, 56, 0.98);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   .md-header--shadow {

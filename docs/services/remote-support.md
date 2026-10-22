@@ -1,10 +1,6 @@
 ---
 title: 技术支持与远程协助
 description: 教程操作后仍未解决问题时，可先联系说明情况并申请远程协助。
-hero_title: 技术支持
-hero_eyebrow: Support · Diagnose · Assist
-hero_subtitle: 教程无法解决时，提供清晰、可沟通的远程协助
-hero_hide_content_title: true
 ---
 
 # 技术支持与远程协助

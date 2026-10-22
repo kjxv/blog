@@ -13,12 +13,30 @@
     --site-line: #dbe5e8;
 }
 
+/* 深色模式沿用首页的蓝灰体系，避免主题默认纯黑与站点卡片风格割裂 */
+body[data-md-color-scheme="slate"] {
+    --site-navy: #9ad7d3;
+    --site-navy-deep: #0f2b38;
+    --site-teal: #70cbc7;
+    --site-page: #17262e;
+    --site-paper: #20323b;
+    --site-ink: #e7eff2;
+    --site-muted: #a8bac1;
+    --site-line: #38515c;
+}
+
 /* 除首页外统一为单行深色导航；首页的沉浸样式会在页面内继续覆盖这些规则 */
 .md-header {
     height: 3.2rem;
     color: rgba(255, 255, 255, 0.78);
     background: rgba(15, 43, 56, 0.98);
     box-shadow: 0 8px 28px rgba(7, 28, 37, 0.12);
+}
+
+/* Material 的深色主色会覆盖页眉颜色，这里统一回首页使用的蓝灰导航 */
+body:not(:has(.home-hero))[data-md-color-scheme] .md-header {
+    color: rgba(255, 255, 255, 0.9);
+    background: var(--site-navy-deep) !important;
 }
 
 .md-header__inner {
@@ -33,6 +51,15 @@
 
 .md-header__option {
     margin-left: auto;
+}
+
+/* 保证普通页面的主题切换按钮始终占有明确位置并保持可见 */
+body:not(:has(.home-hero))[data-md-color-scheme] .md-header__option {
+    display: flex !important;
+    flex: 0 0 auto;
+    color: #f3f8fa;
+    opacity: 1;
+    visibility: visible;
 }
 
 .md-header__title {
@@ -74,6 +101,11 @@
         color: rgba(255, 255, 255, 0.72);
         background: transparent;
         pointer-events: none;
+    }
+
+    body:not(:has(.home-hero))[data-md-color-scheme] .md-tabs {
+        color: rgba(255, 255, 255, 0.78);
+        background: transparent !important;
     }
 
     .md-tabs > .md-grid {
@@ -118,62 +150,6 @@
     }
 }
 
-/* 栏目首页只使用一块克制的横幅，承接首页的海景与蓝灰色调 */
-.section-masthead {
-    position: relative;
-    isolation: isolate;
-    display: grid;
-    min-height: 5.8rem;
-    place-items: center;
-    overflow: hidden;
-    color: #ffffff;
-    text-align: center;
-    background:
-        linear-gradient(90deg, rgba(12, 40, 53, 0.9), rgba(33, 80, 94, 0.68), rgba(12, 40, 53, 0.86)),
-        url("../assets/home-seascape-v2.webp") center 50% / cover no-repeat;
-}
-
-.section-masthead::after {
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    background: radial-gradient(circle at 50% 110%, rgba(116, 208, 205, 0.28), transparent 42%);
-    content: "";
-}
-
-.section-masthead__inner {
-    padding: 0.7rem 1rem;
-}
-
-.section-masthead p {
-    margin: 0 0 0.2rem;
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.48rem;
-    font-weight: 500;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-}
-
-.section-masthead h1 {
-    margin: 0;
-    color: #ffffff;
-    font-size: clamp(1.35rem, 2.4vw, 1.8rem);
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    line-height: 1.2;
-}
-
-.section-masthead span {
-    display: block;
-    margin-top: 0.28rem;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.62rem;
-}
-
-body:has(.section-masthead--hide-content-title) article.md-content__inner > h1:first-child {
-    display: none;
-}
-
 /* 自定义双图并排快捷样式 */
 .split {
     display: flex;
@@ -196,29 +172,36 @@ body:has(.section-masthead--hide-content-title) article.md-content__inner > h1:f
 /* 浅蓝灰画布连接首页色调，同时保留长文阅读的明亮度 */
 [data-md-color-scheme="default"],
 body[data-md-color-scheme="default"],
-[data-md-color-scheme="default"] .md-main {
+[data-md-color-scheme="default"] .md-main,
+body[data-md-color-scheme="slate"],
+body[data-md-color-scheme="slate"] .md-main {
     background-color: var(--site-page);
 }
 
 body:not(:has(.home-hero)) .md-main__inner {
     margin-top: 0;
-    padding-top: 1.1rem;
+    padding-top: 0.8rem;
     padding-bottom: 2.4rem;
 }
 
-/* 正文成为页面的主阅读卡片 */
-body[data-md-color-scheme="default"]:not(:has(.home-hero)) .md-content__inner {
+/* 正文成为页面的主阅读卡片，浅色与深色模式共用同一层级关系 */
+body:not(:has(.home-hero)) .md-content__inner {
     margin-top: 0;
     padding: 2.1rem 1.8rem;
     border: 1px solid var(--site-line);
     border-radius: 12px;
     background-color: var(--site-paper);
+    color: var(--site-ink);
     box-shadow: 0 8px 28px rgba(34, 65, 76, 0.06);
+}
+
+body[data-md-color-scheme="slate"]:not(:has(.home-hero)) .md-content__inner {
+    box-shadow: 0 12px 34px rgba(3, 18, 25, 0.2);
 }
 
 /* 移动端适配：屏幕变小时，适当缩小卡片的内边距，防止手机上两边留白太多吃掉文字空间 */
 @media screen and (max-width: 76.1875em) {
-    body[data-md-color-scheme="default"]:not(:has(.home-hero)) .md-content__inner {
+    body:not(:has(.home-hero)) .md-content__inner {
         padding: 1.5rem 1.5rem;
     }
 }
@@ -246,12 +229,40 @@ body[data-md-color-scheme="default"]:not(:has(.home-hero)) .md-content__inner {
     }
 
     .md-sidebar .md-nav__title {
+        background: var(--site-paper);
+        box-shadow: none;
         color: var(--site-navy);
         font-weight: 700;
     }
 
+    body[data-md-color-scheme="slate"] .md-sidebar .md-nav__link {
+        color: var(--site-muted);
+    }
+
     .md-sidebar .md-nav__link--active {
         color: var(--site-teal);
+    }
+
+    /* 深色模式下左侧导航直接融入画布，去掉主题残留的黑色渐变底板 */
+    body[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__inner,
+    body[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav,
+    body[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title,
+    body[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__list,
+    body[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item {
+        border-color: transparent !important;
+        background: transparent !important;
+        background-image: none !important;
+        box-shadow: none !important;
+    }
+
+    body[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__inner {
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
+    }
+
+    body[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
+        -webkit-mask-image: none;
+        mask-image: none;
     }
 }
 
@@ -370,30 +381,140 @@ body[data-md-color-scheme="default"]:not(:has(.home-hero)) .md-content__inner {
 /* =========================================================
    博客目录页大屏专属排版：左侧封面图，右侧标题+摘要
 ========================================================= */
+.md-post--excerpt {
+    margin-bottom: 1.5rem;
+}
+
+/* 博客页底部分页与每页条数选择器 */
+.blog-list-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--site-line);
+}
+
+.blog-page-size {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--site-muted);
+    font-size: 0.68rem;
+}
+
+.blog-page-size select {
+    min-width: 3.7rem;
+    padding: 0.32rem 1.55rem 0.32rem 0.55rem;
+    border: 1px solid var(--site-line);
+    border-radius: 7px;
+    color: var(--site-ink);
+    background-color: var(--site-paper);
+    font: inherit;
+    cursor: pointer;
+}
+
+.blog-client-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.25rem;
+}
+
+.blog-client-pagination button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.45rem;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    color: var(--site-ink);
+    background: transparent;
+    font: inherit;
+    font-size: 0.68rem;
+    cursor: pointer;
+}
+
+.blog-client-pagination button:hover {
+    border-color: var(--site-line);
+    background: color-mix(in srgb, var(--site-teal) 10%, transparent);
+}
+
+.blog-client-pagination button[aria-current="page"] {
+    border-color: color-mix(in srgb, var(--site-teal) 35%, var(--site-line));
+    color: #ffffff;
+    background: var(--site-teal);
+}
+
+.blog-client-pagination button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.blog-client-pagination__dots {
+    min-width: 1.5rem;
+    color: var(--site-muted);
+    text-align: center;
+}
+
+@media screen and (max-width: 44.984375em) {
+    .blog-list-tools,
+    .blog-client-pagination {
+        justify-content: center;
+    }
+
+    .blog-page-size {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* 目录页保留封面和标题，隐藏摘要中的“本期看点”，让列表更紧凑 */
+.md-post--excerpt .md-post__content > p.hide-in-post {
+    display: none !important;
+}
+
 @media screen and (min-width: 768px) {
     /* 目录页封面略微收窄，给文章标题与摘要留下更多空间 */
     .md-post--excerpt {
         position: relative;
-        padding-left: 260px;
-        min-height: 195px;
+        padding-left: 270px;
+        min-height: 180px;
     }
 
     .md-post--excerpt > .md-post__header {
-        margin-left: -260px;
-        margin-bottom: 12px;
+        margin-left: -270px;
+        margin-bottom: 8px;
     }
 
     .md-post--excerpt .md-post__content img.hide-in-post {
         position: absolute;
         left: 0;
-        top: 40px;
-        width: 240px !important;
+        top: 36px;
+        width: 250px !important;
         margin: 0 !important;
         float: none !important;
     }
+
+    .md-post--excerpt .md-post__content > h2 {
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+        font-size: 1.12em;
+        line-height: 1.42;
+    }
+
+    .md-post--excerpt .md-post__content p {
+        margin-top: 0.35rem;
+        margin-bottom: 0.35rem;
+    }
 }
 
-/* 右侧目录下方的赞赏卡片 */
+/* 右侧目录下方的 Telegram 支持卡片 */
 .sidebar-support {
     margin-top: 1rem;
     padding: 0.8rem;
@@ -402,6 +523,11 @@ body[data-md-color-scheme="default"]:not(:has(.home-hero)) .md-content__inner {
     background: var(--site-paper);
     text-align: center;
     box-shadow: 0 8px 24px rgba(34, 65, 76, 0.05);
+}
+
+/* 目录模板会同时进入移动导航和右侧目录；桌面左栏不重复展示二维码 */
+.md-sidebar--primary .sidebar-support {
+    display: none !important;
 }
 
 .sidebar-support__title {
@@ -426,34 +552,13 @@ body[data-md-color-scheme="default"]:not(:has(.home-hero)) .md-content__inner {
 }
 
 @media screen and (max-width: 76.1875em) {
-    .section-masthead {
-        min-height: 5.5rem;
-    }
-
     body:not(:has(.home-hero)) .md-main__inner {
-        padding-top: 0.8rem;
+        padding-top: 0.7rem;
     }
 }
 
 @media screen and (max-width: 44.984375em) {
-    .section-masthead {
-        min-height: 5.2rem;
-        background-position: 62% center;
-    }
-
-    .section-masthead__inner {
-        padding: 0.6rem 1rem;
-    }
-
-    .section-masthead h1 {
-        font-size: 1.35rem;
-    }
-
-    .section-masthead span {
-        font-size: 0.58rem;
-    }
-
-    body[data-md-color-scheme="default"]:not(:has(.home-hero)) .md-content__inner {
+    body:not(:has(.home-hero)) .md-content__inner {
         padding: 1.25rem 1rem;
         border-radius: 10px;
     }

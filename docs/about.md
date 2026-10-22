@@ -1,10 +1,6 @@
 ---
 title: 关于本站
 description: 了解小V博客的内容方向、整理方式和写作原则。
-hero_title: 关于本站
-hero_eyebrow: About · Purpose · Principles
-hero_subtitle: 记录实操经验，整理可复查的公开资料
-hero_hide_content_title: true
 ---
 
 # 关于本站

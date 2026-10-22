@@ -1,21 +1,5 @@
 {% extends "base.html" %}
 
-{% block hero %}
-  {% if page.meta and page.meta.hero_title %}
-    <section class="section-masthead{% if page.meta.hero_hide_content_title %} section-masthead--hide-content-title{% endif %}" aria-labelledby="section-masthead-title">
-      <div class="section-masthead__inner md-grid">
-        {% if page.meta.hero_eyebrow %}
-          <p>{{ page.meta.hero_eyebrow }}</p>
-        {% endif %}
-        <h1 id="section-masthead-title">{{ page.meta.hero_title }}</h1>
-        {% if page.meta.hero_subtitle %}
-          <span>{{ page.meta.hero_subtitle }}</span>
-        {% endif %}
-      </div>
-    </section>
-  {% endif %}
-{% endblock %}
-
 {% block extrahead %}
   {{ super() }}
   

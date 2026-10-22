@@ -1,10 +1,6 @@
 ---
 title: 隐私政策
 description: 小V博客及相关个人数据工具的信息处理说明。
-hero_title: 隐私政策
-hero_eyebrow: Privacy · Data · Transparency
-hero_subtitle: 清楚说明数据访问、使用、存储与删除方式
-hero_hide_content_title: true
 ---
 
 # 隐私政策
