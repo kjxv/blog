@@ -48,6 +48,7 @@ hide:
 
 | 厂商名称 | 配置说明 (CPU 硬盘) | 回程线路 | 机房位置 | 优缺点 | 价格 | 购买链接 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Nodemach** | 1核2G内存<br>1000Mbps带宽<br>1000GB流量/月 | 电信CN2 GIA <br>联通 4837 | 美国 | **特点：** 带宽够用、流量多、性价比高<br>**缺点：** 目前移动还在优化中 | 9.99美元/月 | [👉 注册链接<br>（永久95折）](https://www.nodemach.com/welcome?vcd=9467e966) | [📖 购买图文教程（首次购买必看）](../../tools/2026-10-24-VPS-nodemach) |
 | **JT** | 1核1G内存<br>200Mbps带宽<br>800GB流量/月 | 中国优化 | 日本 | **特点：** 带宽够用、流量多、性价比高<br>**缺点：** 可能晚高峰没 CN2 9929 CMIN2 稳定 | 10.08美元/月<br>40.84美元/半年 | [👉 点击查看详情](https://www.jtti.cc/zh/light_cloud.html?k=T7KBH7) | 专属优惠码：<span style="color:red"><strong>kjxv2026</strong></span><br>流量升级为 <span style="color:red"><strong>1000G流量</strong></span> $38.29/半年 |
 | **JT** | 1核1G内存<br>200Mbps带宽<br>800GB流量/月 | 中国优化 | 香港 | **特点：** 带宽够用、流量多、性价比高<br>**缺点：** 可能晚高峰没 CN2 9929 CMIN2 稳定 | 10.39美元/月<br>42.07美元/半年| [👉 点击查看详情](https://www.jtti.cc/zh/light_cloud.html?k=T7KBH7) | 专属优惠码：<span style="color:red"><strong>kjxv2026</strong></span><br>流量升级为 <span style="color:red"><strong>1000G流量</strong></span> $39.56/半年 |
 | **华纳云** | 1核1G内存<br>200Mbps带宽<br>800GB流量/月 | 中国优化 | 日本 | **特点：** 带宽够用、流量多、性价比高<br>**缺点：** 可能晚高峰没 CN2 9929 CMIN2 稳定 | 68.4元/月<br>136.80元/季度 | [👉 点击查看详情](https://www.hncloud.com/light_cloud.html?k=kejixiaov) |  |
