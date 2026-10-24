@@ -14,6 +14,7 @@
 [bitgetwallet]: https://web3.bitget.com/share/18dp6i?inviteCode=gUDD3R "邀请码:gUDD3R"
 [bybitcard]: https://partner.bybit.com/b/XIAOV001 "邀请码:4ORD8O3"
 [bitmartcard]: https://www.bm-snow.com/register-referral?appConfig=noNavigateBar&platform=app&r=cyeXg7 "邀请码：cyeXg7"
+[wovia]: https://app.wovia.global/?ref=EQgAnMsW5r
 
 [================= 🏠 静态住宅 IP =================]: #
 [静态代理推荐表]: /recommend/3-isp/ 

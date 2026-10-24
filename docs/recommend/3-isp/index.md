@@ -24,8 +24,10 @@ hide:
 
 * **NODEMACH(原：VIRCS) 美国真实家庭宽带IP（AT&T）:**[点击查看详情][vircs]
 
+* 套餐简介
 ![套餐简介](images/isp-vtrcs.png)
-
+* IP检测结果
+![住宅IP检测结果](images/VIRCS检测.png)
 ---
 ## 🥇 双ISP静态IP VPS（独享、大带宽）
 

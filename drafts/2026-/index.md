@@ -1,18 +1,17 @@
 ---
-date: 2026-06-30
+date: 2026-01-02
 categories:
-  - 工具视频教程
-slug: mili
+  - 视频教程
+slug: wovia
 tags:
-  - 福利
-  - mili
+  - 虚拟U卡
 ---
 
-# 国内手机如何免换机开通海外 eSIM？Xesim 保姆级图文教程
+# 💳 ***
 
 ![封面图](images/fm.png){ .hide-in-post width="300" align="left" style="border-radius: 8px; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 10px;" }
 
-<p class="hide-in-post"><strong>本期看点：</strong>想要在出国旅游、出差时告别繁琐的换卡和高昂的漫游费？想要使用前沿 AI 工具或注册海外 App 却苦于没有境外号码？eSIM 绝对是完美的解决方案。</p>
+<p class="hide-in-post"><strong>本期看点：</strong></p>
 
 <div style="clear: both;" class="hide-in-post"></div>
 
