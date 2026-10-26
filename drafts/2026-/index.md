@@ -45,7 +45,7 @@ tags:
 1. Starryblu官网地址【`邀请码：MHQK00U`】：[点击跳转][starryblu] 
 1. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
 
-!!! abstract "上方是视频中用到的网址。下方亦附有详细图文教程"
+!!! abstract "上方是视频中用到的网址。"
 
 
 ---

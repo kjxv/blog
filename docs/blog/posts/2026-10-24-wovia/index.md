@@ -43,6 +43,7 @@ tags:
 
 ## 📺 视频相关链接
 1. Wovia官方注册链接：[点击跳转][wovia] 
+1. 币安 官方注册链接：[点击跳转][币安]
 1. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
 
 !!! abstract "上方是视频中用到的网址。下方亦附有详细图文教程"
@@ -50,19 +51,6 @@ tags:
 
 ---
 
-## 📦 一、准备工作
-
-3 HK官网地址：[https://www.three.com](https://www.three.com.hk/tc/home.html)
-![步骤一](images/01-1.png){ style="display:block; width:100%; max-width: 920px; margin: 20px auto 28px; border-radius: 12px; box-shadow: 0 6px 18px rgba(15,23,42,0.10);" }
-
-
-<div class="grid" markdown>
-
-![选择网络问题](images/01-21.png)
-
-![选择网络问题](images/01-22.png)
-
-</div>
 
 
 !!! Warning "**免责声明**"
