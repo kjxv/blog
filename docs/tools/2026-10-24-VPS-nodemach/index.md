@@ -7,7 +7,7 @@ hide:
 <style>
   /* 单独控制正文容器的最大宽度并居中显示 */
   .md-content__inner {
-    max-width: 1200px !important; /* 调整这个数值来改变宽度，比如 800px 会更窄，1000px 会更宽 */
+    max-width: 765px !important;
     margin: 0 auto !important;   /* 确保内容在屏幕中央居中 */
   }
 </style>
