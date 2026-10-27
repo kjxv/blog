@@ -43,12 +43,15 @@ tags:
 
 ## 📺 视频相关链接
 1. Wovia官方注册链接：[点击跳转][wovia] 
-1. 币安 官方注册链接：[点击跳转][币安]
+1. 币安 官方注册链接：[点击跳转-享终身 20% 手续费返现][币安]
 1. 币安 官网首页：[https://www.binance.com](https://www.binance.com)
 1. TG交流群：[https://t.me/xiaovchat](https://t.me/xiaovchat)
 
 !!! abstract "上方是视频中用到的网址。下方亦附有详细图文教程"
 
+* Wovia 卡段适用场景说明（如与平台不符，以平台为准）
+
+![卡段适用场景说明](images/Wovia卡bin.jpg)
 
 ---
 
