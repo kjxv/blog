@@ -98,6 +98,7 @@ nav:
           - 常用工具: tools/2026-03-26-tools.md
           - OpenClaw 安装、使用文档: tools/2026-03-26-Openclaw-tools.md
           - Banwagong(搬瓦工VPS): tools/2026-04-25-VPS-banwagong.md
+          - VPS应急切换wireguard: tools/2026-10-27-VPS-emergency-wireguard
   - 关于本站: about.md
   - 隐私政策: privacy.md
   - 免责声明: disclaimer.md
