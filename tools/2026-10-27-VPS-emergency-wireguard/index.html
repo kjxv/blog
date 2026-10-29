@@ -1,0 +1,2414 @@
+<!DOCTYPE html><html lang="zh" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="临时共享订阅、Sing-box Hy 节点、申请更换 IP、可用 VPS 与 WireGuard 图文教程。">
+      
+      
+      
+        <link rel="canonical" href="https://kjxv.net/tools/2026-10-27-VPS-emergency-wireguard/">
+      
+      
+        <link rel="prev" href="../2026-04-25-VPS-banwagong/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>VPS 与机场节点不可用应急方案 - 小V博客</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/wg-live.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  
+  <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3329871586585255" crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="dBT_Fsw_ztEwI4nvv53xoEy1Sj9GchxnOpdOwd3NhME">
+
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vps" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="小V博客" class="md-header__button md-logo" aria-label="小V博客" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            小V博客
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VPS 与机场节点不可用应急方案
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo" aria-label="切换到深色模式" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo" aria-label="切换到浅色模式" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  专栏博客
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../recommend/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  推荐资源
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  关于本站
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../privacy/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  隐私政策
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../disclaimer/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  免责声明
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../services/remote-support/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  技术支持
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden="">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="小V博客" class="md-nav__button md-logo" aria-label="小V博客" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    小V博客
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    专栏博客
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    专栏博客
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归档
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    归档
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3">
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分类
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    分类
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/category/%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图文教程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/category/%E5%B7%A5%E5%85%B7%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具视频教程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/category/%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    视频教程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    推荐资源
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    推荐资源
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../recommend/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    推荐
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    推荐
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommend/1-vps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VPS 云服务器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommend/2-card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    跨境虚拟卡
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommend/3-isp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    静态住宅 IP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommend/4-jiaoyisuo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    加密货币交易所
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommend/5-jichang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机场推荐
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommend/6-accounts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海外账号平台
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked="">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    其他
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    其他
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-03-26-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常用工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-03-26-Openclaw-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw 安装、使用文档
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-04-25-VPS-banwagong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Banwagong(搬瓦工VPS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VPS 与节点应急方案
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VPS 与节点应急方案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#temporary-subscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        临时共享订阅：先恢复一条可用连接
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="临时共享订阅：先恢复一条可用连接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        合并订阅（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独立订阅（备用）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四个方案怎么选
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-1-singbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案一：Sing-box 部署 Hy 节点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方案一：Sing-box 部署 Hy 节点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适用条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finalshell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：必要时为 FinalShell 设置本地代理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sing-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：运行 Sing-box 一键部署脚本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：导出并测试 Hy 节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-2-change-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案二：联系客服或提交工单更换 IP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-3-vps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案三：选择目前可用的 VPS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方案三：选择目前可用的 VPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#panstar-9929-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Panstar：美国、德国 9929、香港 Pro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jtti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JTTI：日本轻量云
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-4-wireguard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案四：WireGuard 隧道
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方案四：WireGuard 隧道">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wireguard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：创建 WireGuard 入站
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：复制配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：保存为 .conf 文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：导入并启用隧道
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五步：检查实际连接
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何选择
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+
+<aside class="sidebar-support" aria-label="咨询与联系">
+  <div class="sidebar-support__title">💬 咨询与联系</div>
+  <a href="https://t.me/kejixiaov" target="_blank" rel="noopener noreferrer" aria-label="通过 Telegram 联系技术人员">
+    <img src="../../assets/images/telegram-contact.png" alt="Telegram 联系二维码">
+  </a>
+  <div class="sidebar-support__hint">如需进一步咨询，请扫描二维码通过 Telegram 联系</div>
+</aside>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于本站
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    隐私政策
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../disclaimer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    免责声明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技术支持
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    技术支持
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/remote-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    远程协助
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#temporary-subscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        临时共享订阅：先恢复一条可用连接
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="临时共享订阅：先恢复一条可用连接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        合并订阅（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独立订阅（备用）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四个方案怎么选
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-1-singbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案一：Sing-box 部署 Hy 节点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方案一：Sing-box 部署 Hy 节点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适用条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finalshell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：必要时为 FinalShell 设置本地代理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sing-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：运行 Sing-box 一键部署脚本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：导出并测试 Hy 节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-2-change-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案二：联系客服或提交工单更换 IP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-3-vps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案三：选择目前可用的 VPS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方案三：选择目前可用的 VPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#panstar-9929-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Panstar：美国、德国 9929、香港 Pro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jtti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JTTI：日本轻量云
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan-4-wireguard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方案四：WireGuard 隧道
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方案四：WireGuard 隧道">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wireguard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：创建 WireGuard 入站
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：复制配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：保存为 .conf 文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：导入并启用隧道
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五步：检查实际连接
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何选择
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+
+<aside class="sidebar-support" aria-label="咨询与联系">
+  <div class="sidebar-support__title">💬 咨询与联系</div>
+  <a href="https://t.me/kejixiaov" target="_blank" rel="noopener noreferrer" aria-label="通过 Telegram 联系技术人员">
+    <img src="../../assets/images/telegram-contact.png" alt="Telegram 联系二维码">
+  </a>
+  <div class="sidebar-support__hint">如需进一步咨询，请扫描二维码通过 Telegram 联系</div>
+</aside>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<style>
+  /* 与博客文章正文保持接近的阅读宽度 */
+  .md-content__inner {
+    max-width: 765px !important;
+    margin: 0 auto !important;
+  }
+
+  .emergency-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+    margin: 1.2rem 0 1.6rem;
+  }
+
+  .emergency-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.2rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.55rem;
+    background: var(--md-default-bg-color);
+    color: var(--md-typeset-a-color);
+    font-weight: 700;
+    line-height: 1.45;
+    text-align: center;
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .emergency-nav a:hover {
+    border-color: var(--md-accent-fg-color);
+    transform: translateY(-1px);
+    box-shadow: 0 0.25rem 0.8rem rgba(0, 0, 0, 0.08);
+  }
+
+  .md-typeset h2[id],
+  .emergency-anchor {
+    scroll-margin-top: 5rem;
+  }
+
+  @media screen and (max-width: 44.984375em) {
+    .emergency-nav {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<hr>
+<h1 id="vps">VPS 与机场节点不可用应急方案</h1>
+<p>近期很多厂商的 VPS 和机场节点可能出现无法使用的情况。下面先提供临时共享订阅，方便群友救急，再整理四种处理方案。读者可根据当前连接情况选择，后续有新的方案会持续更新。</p>
+<p><strong>更新日期：2026 年 10 月 29 日。</strong> 线路可用性随时间和运营商变化，请以自己当前网络的实际测试为准。</p>
+<nav class="emergency-nav" aria-label="应急方案快速导航">
+  <a href="#plan-1-singbox">方案一<br>Sing-box 部署 Hy 节点</a>
+  <a href="#plan-2-change-ip">方案二<br>联系客服申请更换 IP</a>
+  <a href="#plan-3-vps">方案三<br>选择目前可用的 VPS</a>
+  <a href="#plan-4-wireguard">方案四<br>WireGuard 隧道</a>
+</nav>
+
+<h2 id="temporary-subscriptions">临时共享订阅：先恢复一条可用连接</h2>
+<p>考虑到部分群友暂时没有可用代理、无法直接获取 GitHub 上的订阅，现已通过自定义域名中转，方便直接导入 v2rayN 更新订阅。</p>
+<h3 id="_1">合并订阅（推荐）</h3>
+<p>以下链接整合了下面五个订阅源，<strong>导入一个链接即可获取节点</strong>：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://sub.dlzys.shop/all
+</span></code></pre></div>
+<h3 id="_2">独立订阅（备用）</h3>
+<p>如果合并订阅无法正常导入，可以分别尝试以下链接：</p>
+<p><strong>免费订阅链接 01</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://sub.dlzys.shop/sub1
+</span></code></pre></div>
+<p><strong>免费订阅链接 02</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>https://sub.dlzys.shop/sub2
+</span></code></pre></div>
+<p><strong>免费订阅链接 03</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>https://sub.dlzys.shop/sub3
+</span></code></pre></div>
+<p><strong>免费订阅链接 04</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>https://sub.dlzys.shop/sub4
+</span></code></pre></div>
+<p><strong>免费订阅链接 05</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>https://sub.dlzys.shop/sub5
+</span></code></pre></div>
+<h3 id="_3">使用说明</h3>
+<ol>
+<li>复制推荐的合并订阅链接，添加到 v2rayN 的<strong>订阅分组设置</strong>中并保存。</li>
+<li>更新订阅时，选择 <strong>「更新订阅（不通过代理）」</strong>；不同版本的菜单名称可能略有区别，请选择不通过代理更新的选项。</li>
+<li>更新完成后测试节点延迟，优先选择有有效延迟数值的节点，再打开网页确认实际连接。超时或显示 <code>-1</code> 的节点先跳过。</li>
+<li>如果合并订阅无法正常导入，改用上面的独立订阅链接逐个尝试。</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">群内临时应急使用</p>
+<ul>
+<li>免费节点稳定性无法保证，仅供临时应急，不保证速度或持续可用。</li>
+<li>节点来源于第三方，不建议用于敏感账户登录或支付操作。</li>
+<li><strong>订阅链接仅供本群群友自用，请勿转载或公开传播。</strong></li>
+</ul>
+</div>
+<hr>
+<h2 id="_4">四个方案怎么选</h2>
+<div class="admonition info">
+<p class="admonition-title">先判断自己属于哪种情况</p>
+<p>能通过 SSH 登录 VPS，可尝试方案一；希望继续使用原服务器，可联系服务商了解方案二；急需恢复且原服务器不可达，可考虑方案三；能登录 3X-UI 且 UDP 仍可达，可尝试方案四。Sing-box 和 WireGuard 均不会把机房 IP 变成住宅 IP，也不能保证在所有网络下恢复连接。</p>
+</div>
+<p><span id="plan-2-singbox" class="emergency-anchor"></span></p>
+<h2 id="plan-1-singbox">方案一：Sing-box 部署 Hy 节点</h2>
+<p>这是临时应急方案。前提是服务器仍然可以通过 SSH 连接：能够直连时正常登录即可；无法直连但本地代理可用时，可以让 SSH 客户端通过本地代理连接 VPS。</p>
+<h3 id="_5">适用条件</h3>
+<ul>
+<li>仍能通过 SSH 直接连接 VPS，或可借助本地代理完成连接；</li>
+<li>拥有服务器的 <code>root</code> 权限，或可以使用 <code>sudo</code> 切换到 <code>root</code>；</li>
+<li>VPS 本身可以访问互联网；</li>
+<li>可以在服务商安全组和系统防火墙中放行脚本生成的端口。</li>
+</ul>
+<h3 id="finalshell">第一步：必要时为 FinalShell 设置本地代理</h3>
+<p>如果 VPS 被当前网络阻断、FinalShell 无法直连，可以让 SSH 通过本地代理连接。<strong>前提是本地已有一条能连接目标 VPS 的可用代理</strong>；可先尝试上面的临时共享订阅。</p>
+<ol>
+<li>打开 v2rayN 或其他代理软件，更新订阅、测试延迟并选中一条可用节点，确认代理已经正常运行。</li>
+<li>在 FinalShell 的<strong>连接管理器</strong>中找到该 VPS，右键选择 <strong>「编辑」</strong>。</li>
+<li>在左侧进入 <strong>「代理服务器」</strong>，点击 <strong>「添加」</strong>，代理类型选择 <strong>SOCKS5</strong>。</li>
+<li>主机填写 <code>127.0.0.1</code>；截图中 v2rayN 的本地端口为 <code>10808</code>。请以软件当前显示的 SOCKS 或混合监听端口为准，其他软件也要按实际端口填写。</li>
+<li>保存代理设置，<strong>勾选刚添加的代理</strong>，点击 <strong>「应用 → 确定」</strong>，然后重新连接 VPS。</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/07-finalshell-proxy-redacted.png" data-desc-position="bottom"><img alt="在 FinalShell 中为 SSH 连接设置本地 SOCKS5 代理，公网 IP 已脱敏" src="images/07-finalshell-proxy-redacted.png"></a></p>
+<blockquote>
+<p><code>127.0.0.1:10808</code> 指的是这台电脑上的代理服务，并非 VPS 的 SSH 端口或新部署的 Hy 节点端口。VPS 地址、SSH 端口和登录信息仍填写原来的值。如果代理也无法访问该 VPS，请改看方案二或方案三。</p>
+</blockquote>
+<h3 id="sing-box">第二步：运行 Sing-box 一键部署脚本</h3>
+<p>连接 VPS 后，先切换到 <code>root</code> 用户：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>-i
+</span></code></pre></div>
+<p>然后运行下面的<strong>固定视频教程版</strong>部署命令，版本为 <code>v1.3.28-vedio</code>：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>bash<span class="w"> </span>&lt;<span class="o">(</span>wget<span class="w"> </span>-qO-<span class="w"> </span>https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh<span class="o">)</span>
+</span></code></pre></div>
+<p>脚本交互界面出现后，根据提示选择语言和安装选项；需要应急测试的协议为 <strong>Hysteria2（Hy）</strong>。完成部署后，记录生成的端口，并在服务商安全组和系统防火墙中放行对应的 <strong>UDP 端口</strong>。</p>
+<p>如果希望自动填写参数、使用中文极速安装，可运行：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>bash<span class="w"> </span>&lt;<span class="o">(</span>wget<span class="w"> </span>-qO-<span class="w"> </span>https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh<span class="o">)</span><span class="w"> </span>-l
+</span></code></pre></div>
+<p>该标签固定用于本期教程，后续 <code>main</code> 同步上游不会改变这条命令对应的脚本。具体版本信息和使用说明见 <a href="https://github.com/kjxv/sing-box/releases/tag/v1.3.28-vedio">v1.3.28-vedio Release</a>。已有部署的用户应先保留原配置，避免覆盖正在使用的服务。</p>
+<div class="admonition danger">
+<p class="admonition-title">运行远程脚本前请确认</p>
+<p>上面的命令会下载并以服务器权限直接执行脚本。建议先打开 <a href="https://github.com/kjxv/sing-box">kjxv/sing-box 项目页面</a> 查看来源和更新记录。谨慎操作时，也可以先下载并检查脚本，再手动执行：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>wget<span class="w"> </span>-O<span class="w"> </span>sing-box.sh<span class="w"> </span>https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>less<span class="w"> </span>sing-box.sh
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>bash<span class="w"> </span>sing-box.sh
+</span></code></pre></div>
+</div>
+<h3 id="hy">第三步：导出并测试 Hy 节点</h3>
+<p>安装完成后，可以运行下面的快捷命令查看节点信息：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sb<span class="w"> </span>-n
+</span></code></pre></div>
+<p>复制生成的 Hysteria2 节点链接，导入 v2rayN 等兼容客户端后进行延迟和连接测试。如果节点无法使用，请优先检查：</p>
+<ol>
+<li>安全组和系统防火墙是否放行了生成的 <strong>UDP 端口</strong>；</li>
+<li>客户端是否支持 Hysteria2；</li>
+<li>VPS 的公网 IP 是否仍然可以从当前网络访问；</li>
+<li>服务器时间、域名解析和出站网络是否正常。</li>
+</ol>
+<blockquote>
+<p>能通过代理登录 SSH，只说明这条代理能够访问服务器，不代表新部署的 Hy 节点一定能从本地直连使用。如果测试仍失败，可联系服务商更换 IP，或按方案三选择其他可用 VPS。</p>
+</blockquote>
+<hr>
+<h2 id="plan-2-change-ip">方案二：联系客服或提交工单更换 IP</h2>
+<p>如果希望继续使用原 VPS，可以联系服务商客服，或在用户后台提交工单，说明当前网络无法连接，请客服协助检查，并咨询是否支持更换公网 IP。</p>
+<p><strong>如果暂时不着急使用，建议先等几天，待情况相对稳定后再考虑更换。</strong> 如果急需恢复，可先用临时订阅，或尝试其他应急方案；新 IP 是否可用仍需实际测试。</p>
+<p>提交工单前，准备好以下信息：</p>
+<ul>
+<li>VPS 订单号、实例名称、当前 IP，以及大致开始异常的时间；</li>
+<li>当前使用的运营商和地区，SSH、面板和节点分别是否可以连接；</li>
+<li>询问能否免费更换、是否收费，以及换 IP 是否影响现有数据。</li>
+</ul>
+<p>客服完成更换后，将 FinalShell 的服务器地址、客户端节点地址及必要的域名解析更新为新 IP，再重新测试。<strong>不要把更换 IP 等同于重装系统</strong>，是否需要重建实例、数据能否保留，应以客服明确说明为准。</p>
+<hr>
+<h2 id="plan-3-vps">方案三：选择目前可用的 VPS</h2>
+<p>如果原服务器已经无法使用，或者需要继续搭建住宅 IP 出口，可以先选择一台当前连接正常的 VPS 作为中转或基础服务器，再在其后配置自己合法持有或授权使用的住宅 IP 服务。</p>
+<p>按目前整理的反馈，可优先测试以下备选。Panstar 截图记录的是 <strong>2026 年 10 月 27 日</strong> 的测试情况，不能代表之后每个时间点、每个运营商的连接状态。</p>
+<table>
+<thead>
+<tr>
+<th>备选产品</th>
+<th>更适合的场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美国三网精品 VPS</td>
+<td>面向美国方向使用，作为临时中转或住宅 IP 前置服务器</td>
+</tr>
+<tr>
+<td>德国 9929 VPS</td>
+<td>需要欧洲地区出口或中欧方向连接的用户</td>
+</tr>
+<tr>
+<td>香港 Pro VPS</td>
+<td>更看重亚洲地区延迟和香港方向连接的用户</td>
+</tr>
+<tr>
+<td>JTTI 日本轻量云</td>
+<td>需要日本方向服务器，可先测试该线路在本地运营商的可用性</td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/06-panstar-vps-test.png" data-desc-position="bottom"><img alt="Panstar 美国、德国和香港节点当日连接测试情况" src="images/06-panstar-vps-test.png"></a></p>
+<div class="admonition info">
+<p class="admonition-title">测试结果具有时效性</p>
+<p>截图只代表测试当时的网络情况。线路状态、延迟、库存和价格都可能发生变化，购买前建议先月付测试，并以官网实时显示为准。</p>
+</div>
+<h3 id="panstar-9929-pro">Panstar：美国、德国 9929、香港 Pro</h3>
+<p><a href="https://panstar.ai/register?aff=DCAD1VCH">进入 Panstar 注册页面</a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/Panstar%E8%B4%AD%E4%B9%B0%E6%8C%87%E5%BC%95.png" data-desc-position="bottom"><img alt="Panstar 购买指引" src="images/Panstar%E8%B4%AD%E4%B9%B0%E6%8C%87%E5%BC%95.png"></a></p>
+<hr>
+<h3 id="jtti">JTTI：日本轻量云</h3>
+<p><a href="https://www.jtti.cc/zh/light_cloud.html?k=T7KBH7">进入 JTTI 日本轻量云页面</a> · <a href="../2026-10-26-VPS-JTT/">查看本站 JTTI 详细下单教程</a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/Jtti%E6%97%A5%E6%9C%AC%E4%BA%91%E8%B4%AD%E4%B9%B0%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.png" data-desc-position="bottom"><img alt="JTTI 日本轻量云购买操作指引" src="images/Jtti%E6%97%A5%E6%9C%AC%E4%BA%91%E8%B4%AD%E4%B9%B0%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.png"></a></p>
+<p><a href="../../recommend/1-vps/">查看本站 VPS 实测推荐与套餐说明</a></p>
+<blockquote>
+<p><strong>注意：</strong> VPS 本身通常属于机房 IP。若最终目标是住宅 IP，需要在可用 VPS 上继续配置合规的住宅代理或 ISP 出口；购买 Panstar VPS 并不等于直接获得住宅 IP。</p>
+</blockquote>
+<hr>
+<p><span id="plan-1-wireguard" class="emergency-anchor"></span></p>
+<h2 id="plan-4-wireguard">方案四：WireGuard 隧道</h2>
+<p>本方案适合<strong>仍能登录 3X-UI 控制台，且服务器的 UDP 端口可以访问</strong>的用户。出口仍然是 VPS 的机房 IP。Windows 用户请先安装 <a href="https://www.wireguard.com/install/">WireGuard 官方客户端</a>。</p>
+<h3 id="wireguard">第一步：创建 WireGuard 入站</h3>
+<p>进入 3X-UI 入站列表，点击 <strong>「添加入站」</strong>，协议选择 <strong>WireGuard</strong>，填写备注，并设置一个未被占用的高位端口。在服务商安全组和系统防火墙中放行对应的 <strong>UDP 端口</strong>。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/01-create-wireguard-inbound.png" data-desc-position="bottom"><img alt="在 3X-UI 中创建 WireGuard 入站并设置 UDP 端口" src="images/01-create-wireguard-inbound.png"></a></p>
+<p>点击 <strong>「保存更改」</strong>，确认该入站已启用。截图中的端口仅作演示，请使用自己的端口。</p>
+<h3 id="_6">第二步：复制配置</h3>
+<p>进入对应客户端详情，在 <strong>「WireGuard 配置」</strong> 一栏点击复制按钮，复制完整配置。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/02-copy-wireguard-config-redacted.png" data-desc-position="bottom"><img alt="在客户端详情中复制 WireGuard 配置文件" src="images/02-copy-wireguard-config-redacted.png"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">保管好自己的配置</p>
+<p>配置包含私钥和服务器连接信息，请使用自己控制台生成的内容。图中敏感信息已隐藏，不要照抄，也不要公开自己的配置、二维码或私钥。</p>
+</div>
+<h3 id="conf">第三步：保存为 <code>.conf</code> 文件</h3>
+<p>新建记事本文档，粘贴刚复制的配置，再点击 <strong>「文件 → 另存为」</strong>。文件名可填写 <code>emergency-wg.conf</code>，保存类型选择 <strong>「所有文件」</strong>，编码保留 UTF-8，确认文件名末尾是 <strong><code>.conf</code> 而非 <code>.conf.txt</code></strong>。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/03-save-wireguard-config-redacted.png" data-desc-position="bottom"><img alt="将 WireGuard 配置保存为 conf 文件" src="images/03-save-wireguard-config-redacted.png"></a></p>
+<h3 id="_7">第四步：导入并启用隧道</h3>
+<p>打开 WireGuard，点击左下角 <strong>「新建隧道」</strong> 旁边的下拉菜单，选择 <strong>「从文件导入隧道」</strong>，打开刚保存的 <code>.conf</code> 文件。选中新隧道，点击 <strong>「连接」或「启用」</strong>。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/04-import-wireguard-tunnel.png" data-desc-position="bottom"><img alt="在 WireGuard 客户端中从文件导入隧道" src="images/04-import-wireguard-tunnel.png"></a></p>
+<h3 id="_8">第五步：检查实际连接</h3>
+<p>确认客户端有<strong>最近握手时间</strong>、接收与发送流量发生变化，再查询浏览器出口 IP，并实际打开需要使用的网页。仅看到「已连接」不能单独证明服务器已经连通。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/05-verify-wireguard-connection-redacted.png" data-desc-position="bottom"><img alt="检查 WireGuard 握手、流量与出口 IP" src="images/05-verify-wireguard-connection-redacted.png"></a></p>
+<p>没有握手时，先检查入站是否启用、<code>Endpoint</code> 地址和端口是否正确、UDP 是否放行，以及当前网络能否访问该 VPS。有握手但网页打不开时，再检查 DNS、<code>AllowedIPs</code>、服务器转发与 NAT。</p>
+<p>如果控制台或公网 IP 已经完全不可达，WireGuard 也不能保证恢复。可以按方案二联系服务商，或按方案三准备可用 VPS。原有线路恢复后，可停用临时隧道，再按需删除配置和入站。</p>
+<hr>
+<h2 id="_9">如何选择</h2>
+<ul>
+<li><strong>当前没有可用代理，想先救急：</strong> 先尝试上面的临时共享订阅，并测试实际连接。</li>
+<li><strong>能通过 SSH 直连，或能通过本地代理登录 VPS：</strong> 尝试方案一部署 Hy 节点。</li>
+<li><strong>想保留原服务器且不着急使用：</strong> 按方案二联系服务商，待情况稳定后再考虑换 IP。</li>
+<li><strong>原服务器无法使用、又急需恢复：</strong> 按方案三测试其他可用 VPS。</li>
+<li><strong>能登录 3X-UI，且 UDP 仍可达：</strong> 可尝试方案四 WireGuard。</li>
+<li><strong>必须使用住宅 IP：</strong> 在可用 VPS 的基础上，另行配置自己拥有使用权限的住宅 IP 服务。</li>
+</ul>
+<p>本文方案仅用于正常的网络维护、远程办公和个人服务恢复。请遵守所在国家或地区的法律法规以及服务商条款，不要用于未经授权的访问或其他违规用途。</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://t.me/kejixiaov" target="_blank" rel="noopener" title="Telegram 咨询与联系" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m115 168.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7.2-.7.3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2.5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3.6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6.5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7.5 3.2.6 6.5.4 9.8z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "content.tabs.link", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../javascripts/wg-live.js"></script>
+      
+        <script src="../../javascripts/blog-page-size.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
